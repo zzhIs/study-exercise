@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/study-nacos/dome/dome11.iml" filepath="$PROJECT_DIR$/study-nacos/dome/dome11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-base/study-base.iml" filepath="$PROJECT_DIR$/study-base/study-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-exercise.iml" filepath="$PROJECT_DIR$/study-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-feign/study-feign.iml" filepath="$PROJECT_DIR$/study-feign/study-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
+    </modules>
+  </component>
+</project>
