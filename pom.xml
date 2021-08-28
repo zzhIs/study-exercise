@@ -10,7 +10,7 @@
     </parent>
 
     <modules>
-        <module>study-feign</module>
+        <module>study-feign1</module>
         <module>study-base</module>
         <module>study-nacos</module>
     </modules>

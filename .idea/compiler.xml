@@ -7,18 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="study-feign1" />
         <module name="nacos-consumers" />
         <module name="study-feign" />
         <module name="nacos-provider" />
+        <module name="nacos-feign" />
         <module name="study-base" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="nacos-consumers" target="1.8" />
+      <module name="nacos-feign" target="1.8" />
       <module name="nacos-provider" target="1.8" />
       <module name="study-base" target="1.8" />
       <module name="study-exercise" target="1.8" />
       <module name="study-feign" target="1.8" />
+      <module name="study-feign1" target="1.8" />
       <module name="study-java" target="1.8" />
       <module name="study-nacos" target="1.8" />
     </bytecodeTargetLevel>
@@ -26,10 +30,12 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="nacos-consumers" options="-parameters" />
+      <module name="nacos-feign" options="-parameters" />
       <module name="nacos-provider" options="-parameters" />
       <module name="study-base" options="-parameters" />
       <module name="study-exercise" options="-parameters" />
       <module name="study-feign" options="-parameters" />
+      <module name="study-feign1" options="-parameters" />
       <module name="study-java" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
     </option>

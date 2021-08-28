@@ -10,6 +10,6 @@ For further reference, please consider the following sections:
 
 ###服务端口记录
 study-base :10000 
-study-feign :10001
+study-feign1 :10001
 nacos-provider :10002
 nacos-consumers :10003
