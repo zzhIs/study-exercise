@@ -1,15 +1,21 @@
 package com.zzh.dream.nacosconsumers.configuration;
 
 import com.alibaba.cloud.nacos.ribbon.NacosRule;
-import com.netflix.loadbalancer.IRule;
-import com.zzh.dream.nacosconsumers.loadbanlance.NacosRandomWithWeightRule;
+//import com.netflix.loadbalancer.IRule;
+import com.zzh.dream.nacosconsumers.ribbon.NacosRandomWithWeightRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @description: TODO 类描述
+ * @description: Spring官方提供了两种负载均衡的客户端：
+ * RestTemplate
+ * RestTemplate是Spring提供的用于访问Rest服务的客户端，RestTemplate提供了多种便捷访问远程Http服务的方法，
+ * 能够大大提高客户端的编写效率。默认情况下，RestTemplate默认依赖jdk的HTTP连接工具。
+ *
+ * 使用方案只需要结合RestTemplate使用在注入时使用    @LoadBalanced注解即可
+ *
  * @author: zhangzihao
  * @date: 27/08/2021
  **/
@@ -35,17 +41,17 @@ public class RibbonConfiguration {
         ZoneAvoidanceRule： 默认的负载均衡策略，即复合判断Server所在区域的性能和Server的可用性选择Server，在没有区域的环境下，类似于轮询(RandomRule)
         NacosRule:  同集群优先调用
      */
-    @Bean
+//    @Bean
 //    public IRule iRule(){
 //        // 指定使用Nacos提供的负载均衡策略（优先调用同一集群的实例，基于随机权重）
 //        return new NacosRule();
 //    }
 
     /*
-    全局配置自定义的负载均衡器策略
+    ribbon全局配置自定义的负载均衡器策略
      */
-    public IRule iRule(){
-        return new NacosRandomWithWeightRule();
-    }
+//    public IRule iRule(){
+//        return new NacosRandomWithWeightRule();
+//    }
 
 }

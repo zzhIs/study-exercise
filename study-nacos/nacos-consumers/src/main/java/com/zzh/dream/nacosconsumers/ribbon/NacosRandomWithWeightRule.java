@@ -1,4 +1,4 @@
-package com.zzh.dream.nacosconsumers.loadbanlance;
+package com.zzh.dream.nacosconsumers.ribbon;
 
 import com.alibaba.cloud.nacos.NacosDiscoveryProperties;
 import com.alibaba.cloud.nacos.ribbon.NacosServer;
@@ -8,7 +8,6 @@ import com.alibaba.nacos.api.naming.pojo.Instance;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.AbstractLoadBalancerRule;
 import com.netflix.loadbalancer.DynamicServerListLoadBalancer;
-import com.netflix.loadbalancer.ILoadBalancer;
 import com.netflix.loadbalancer.Server;
 import org.springframework.beans.factory.annotation.Autowired;
 
