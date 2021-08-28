@@ -1,5 +1,0 @@
-# Project exclude paths
-/study-base/target/
-/study-feign/target/
-/study-nacos/nacos-consumers/target/
-/study-nacos/nacos-provider/target/
