@@ -16,7 +16,7 @@ public class CommonController {
 
     @GetMapping("user/{userId}")
     public String findOrderByUserId(@PathVariable String userId) {
-        System.out.println("我是微服务提供服务...我被调用了"+userId);
+        System.out.println("我是微服务【nacos-provider】的CommonController.findOrderByUserId()...我被调用了"+userId);
         return "我是微服务【nacos-provider】的CommonController.findOrderByUserId()...我被调用了 " + userId;
     }
 }
