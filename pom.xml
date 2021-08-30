@@ -13,6 +13,7 @@
         <module>study-feign1</module>
         <module>study-base</module>
         <module>study-nacos</module>
+        <module>study-dubbo</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/study-nacos/dome/dome11.iml" filepath="$PROJECT_DIR$/study-nacos/dome/dome11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-dubbo/dubbo-nacos-api/dubbo-nacos-api.iml" filepath="$PROJECT_DIR$/study-dubbo/dubbo-nacos-api/dubbo-nacos-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-dubbo/dubbo-nacos-consumers/dubbo-nacos-consumers.iml" filepath="$PROJECT_DIR$/study-dubbo/dubbo-nacos-consumers/dubbo-nacos-consumers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-dubbo/dubbo-nacos-provider/dubbo-nacos-provider.iml" filepath="$PROJECT_DIR$/study-dubbo/dubbo-nacos-provider/dubbo-nacos-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-base/study-base.iml" filepath="$PROJECT_DIR$/study-base/study-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-dubbo/study-dubbo.iml" filepath="$PROJECT_DIR$/study-dubbo/study-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-exercise.iml" filepath="$PROJECT_DIR$/study-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-feign/study-feign.iml" filepath="$PROJECT_DIR$/study-feign/study-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-feign1/study-feign1.iml" filepath="$PROJECT_DIR$/study-feign1/study-feign1.iml" />

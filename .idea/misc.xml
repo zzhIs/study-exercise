@@ -10,6 +10,10 @@
         <option value="$PROJECT_DIR$/study-nacos/nacos-consumers/pom.xml" />
         <option value="$PROJECT_DIR$/study-nacos/nacos-provider/pom.xml" />
         <option value="$PROJECT_DIR$/study-feign1/pom.xml" />
+        <option value="$PROJECT_DIR$/study-dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/study-dubbo/dubbo-nacos-api/pom.xml" />
+        <option value="$PROJECT_DIR$/study-dubbo/dubbo-nacos-consumers/pom.xml" />
+        <option value="$PROJECT_DIR$/study-dubbo/dubbo-nacos-provider/pom.xml" />
       </list>
     </option>
   </component>

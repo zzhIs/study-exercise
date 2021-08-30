@@ -11,5 +11,11 @@ For further reference, please consider the following sections:
 ###服务端口记录
 study-base :10000 
 study-feign1 :10001
-nacos-provider :10002
-nacos-consumers :10003
+
+study-nacos:
+    nacos-provider :10002
+    nacos-consumers :10003
+
+study-dubbo:
+    dubbo-nacos-provider :10004
+    dubbo-nacos-consumers :10005

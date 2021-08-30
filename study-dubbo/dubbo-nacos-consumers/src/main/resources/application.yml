@@ -1,0 +1,26 @@
+server:
+  port: 10005
+
+spring:
+  application:
+    name: dubbo-nacos-consumers
+
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+
+dubbo:
+  application:
+    name: dubbo-nacos-consumers
+  registry:
+    protocol: dubbo
+    address: nacos://127.0.0.1:8848
+  protocol:
+    name: dubbo
+    port: 20881
+    # 扫描需要暴露的服务，可以被 @EnableDubbo 注解替代
+    #scan:
+    #  base-packages: com.example.service
+
