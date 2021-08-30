@@ -2,7 +2,7 @@ package com.zzh.dream.dubbonacosconsumers.controller;
 
 import com.zzh.dream.dubbonacosapi.api.ProductService;
 import com.zzh.dream.dubbonacosapi.entity.Product;
-import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/order")
 public class OrderController {
-    @DubboReference
+    @Reference
     private ProductService productService;
 
     @GetMapping("/list")
