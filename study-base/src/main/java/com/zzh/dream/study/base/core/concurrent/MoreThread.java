@@ -1,4 +1,4 @@
-package com.zzh.dream.study.base.core;
+package com.zzh.dream.study.base.core.concurrent;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.ListeningExecutorService;
