@@ -16,13 +16,13 @@ public class TestFuture {
 
     public static void main(String[] args) throws Exception {
         //1.基础提交方式
-//        futureSubmit();
+        futureSubmit();
 
         //2.guava 提交回调异步
 //        guavaFutureSubmit();
 
         //3completableFuture
-        completableFuture();
+//        completableFuture();
     }
 
     /**

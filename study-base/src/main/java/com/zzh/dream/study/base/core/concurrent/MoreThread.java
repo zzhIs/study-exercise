@@ -21,23 +21,39 @@ public class MoreThread {
     public static void main(String[] args) throws Exception {
         CountDownLatch latch = new CountDownLatch(2);
         for (int i = 0; i <2 ; i++) {
-            //执行逻辑
-            latch.countDown();
+            new Thread(()->{
+                latch.countDown();
+            }).start();
         }
         latch.await();
 
         //限制执行的线程数
         Semaphore semaphore = new Semaphore(2);
         for (int i = 0; i <2 ; i++) {
-            semaphore.acquire();
-            //执行逻辑
-            semaphore.release();
+            new Thread(()->{
+                try {
+                    semaphore.acquire();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                //执行逻辑
+                semaphore.release();
+            }).start();
+
         }
 
         CyclicBarrier cyclicBarrier = new CyclicBarrier(2);
         for (int i = 0; i <2 ; i++) {
-            //执行逻辑
-            cyclicBarrier.await();
+            new Thread(()->{
+                //执行逻辑
+                try {
+                    cyclicBarrier.await();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (BrokenBarrierException e) {
+                    e.printStackTrace();
+                }
+            }).start();
         }
 
         ExecutorService executorService = Executors.newFixedThreadPool(2, new NamedThreadFactory("name"));
