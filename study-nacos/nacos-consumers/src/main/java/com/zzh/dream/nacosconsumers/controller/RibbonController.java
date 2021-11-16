@@ -25,7 +25,7 @@ public class RibbonController {
     @GetMapping("/app-name")
     public String echoAppName(){
         System.out.println("我是微服务消费者，基于ribbon调用服务啦...");
-        String url = String.format("http://nacos-provider/echo/%s",appName);
+        String url = String.format("http://nacos-provider/provider/echo/%s",appName);
         System.out.println("request url:"+url);
         return restTemplate.getForObject(url,String.class);
     }

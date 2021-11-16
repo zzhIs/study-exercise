@@ -2,7 +2,7 @@ package com.zzh.dream.nacosconsumers.configuration;
 
 import com.alibaba.cloud.nacos.ribbon.NacosRule;
 //import com.netflix.loadbalancer.IRule;
-import com.zzh.dream.nacosconsumers.ribbon.NacosRandomWithWeightRule;
+//import com.zzh.dream.nacosconsumers.ribbon.NacosRandomWithWeightRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

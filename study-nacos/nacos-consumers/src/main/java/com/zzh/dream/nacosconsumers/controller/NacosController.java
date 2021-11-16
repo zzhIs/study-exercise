@@ -28,8 +28,7 @@ public class NacosController {
     @GetMapping("/app-name")
     public String echoAppName(){
         System.out.println("我是微服务消费者，我要开始调用服务啦...");
-        ServiceInstance serviceInstance = loadBalancerClient.choose("nacos-provider");
-        String url = String.format("http://%s:%s/echo/%s",serviceInstance.getHost(),serviceInstance.getPort(),appName);
+        String url = String.format("http://nacos-provider/provider/echo/%s",appName);
         System.out.println("request url:"+url);
         return restTemplate.getForObject(url,String.class);
     }

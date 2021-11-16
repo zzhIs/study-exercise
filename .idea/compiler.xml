@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dubbo-nacos-consumers" />
         <module name="nacos-consumers" />
+        <module name="eureka-client" />
         <module name="study-feign" />
         <module name="dubbo-nacos-api" />
         <module name="dubbo-nacos-provider" />
         <module name="study-feign1" />
         <module name="nacos-provider" />
         <module name="nacos-feign" />
+        <module name="eureka-server" />
         <module name="study-base" />
       </profile>
     </annotationProcessing>
@@ -22,11 +24,14 @@
       <module name="dubbo-nacos-api" target="1.8" />
       <module name="dubbo-nacos-consumers" target="1.8" />
       <module name="dubbo-nacos-provider" target="1.8" />
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-server" target="1.8" />
       <module name="nacos-consumers" target="1.8" />
       <module name="nacos-feign" target="1.8" />
       <module name="nacos-provider" target="1.8" />
       <module name="study-base" target="1.8" />
       <module name="study-dubbo" target="1.8" />
+      <module name="study-eureka" target="1.8" />
       <module name="study-exercise" target="1.8" />
       <module name="study-feign" target="1.8" />
       <module name="study-feign1" target="1.8" />
@@ -39,11 +44,14 @@
       <module name="dubbo-nacos-api" options="-parameters" />
       <module name="dubbo-nacos-consumers" options="-parameters" />
       <module name="dubbo-nacos-provider" options="-parameters" />
+      <module name="eureka-client" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="nacos-consumers" options="-parameters" />
       <module name="nacos-feign" options="-parameters" />
       <module name="nacos-provider" options="-parameters" />
       <module name="study-base" options="-parameters" />
       <module name="study-dubbo" options="-parameters" />
+      <module name="study-eureka" options="-parameters" />
       <module name="study-exercise" options="-parameters" />
       <module name="study-feign" options="-parameters" />
       <module name="study-feign1" options="-parameters" />
