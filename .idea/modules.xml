@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/study-dubbo/dubbo-nacos-provider/dubbo-nacos-provider.iml" filepath="$PROJECT_DIR$/study-dubbo/dubbo-nacos-provider/dubbo-nacos-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-eureka/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/study-eureka/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-eureka/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/study-eureka/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-config/nacos-config.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-config/nacos-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-base/study-base.iml" filepath="$PROJECT_DIR$/study-base/study-base.iml" />

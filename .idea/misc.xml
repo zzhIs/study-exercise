@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/study-eureka/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/study-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/study-eureka/eureka-client/pom.xml" />
+        <option value="$PROJECT_DIR$/study-nacos/nacos-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

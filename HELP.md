@@ -19,3 +19,4 @@ study-nacos:
 study-dubbo:
     dubbo-nacos-provider :10004
     dubbo-nacos-consumers :10005
+    dubbo-nacos-config :10006
