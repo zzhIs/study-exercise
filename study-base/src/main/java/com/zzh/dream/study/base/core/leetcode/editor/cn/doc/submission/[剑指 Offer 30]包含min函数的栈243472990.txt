@@ -1,0 +1,53 @@
+class MinStack {
+
+    Stack<Integer> stack = new Stack<>();
+    Stack<Integer> stack2 = new Stack<>();
+
+    /**
+     * initialize your data structure here.
+     */
+    public MinStack() {
+
+    }
+
+    public void push(int x) {
+        stack.push(x);
+        if (stack2.isEmpty() || stack2.peek() >= x) {
+            stack2.push(x);
+        }
+    }
+
+    public void pop() {
+        Integer pop = stack.pop();
+        if (pop == stack2.peek()) {
+            stack2.pop();
+        }
+    }
+
+    public int top() {
+        return stack.peek();
+    }
+
+    public int min() {
+        if (!stack2.isEmpty()) {
+            return stack2.peek();
+        }
+        return 0;
+    }
+}
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(x);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.min();
+ */
+
+//total_testcases:19
+//total_correct:14
+//input_formatted:["MinStack","push","push","push","push","pop","min","pop","min","pop","min"]
+                    [[],    [512],  [-1024],[-1024],[512], [],   [],    [],   [],   [],   []]
+//expected_output:[null,    null,    null,   null,   null, null,-1024, null, -1024, null, 512]
+//code_output:    [null,    null,    null,   null,   null, null,-1024, null, -1024, null,-1024]

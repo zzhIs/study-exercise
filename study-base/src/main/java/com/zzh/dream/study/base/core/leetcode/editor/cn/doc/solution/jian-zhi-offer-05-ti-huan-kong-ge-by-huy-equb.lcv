@@ -1,0 +1,26 @@
+### 解题思路
+
+这是一道简单的字符串替换的题目，在实际工作中会经常遇到字符串替换的问题
+- 使用API实现
+- 使用正则实现
+- **循环逐个字符替换**
+
+### 代码
+
+循环逐个字符替换的解法
+
+* java
+
+```java
+class Solution {
+  public String replaceSpace(String s) {
+    StringBuilder ans = new StringBuilder();
+    for (char c : s.toCharArray()) {
+      if (c == ' ') ans.append("%20");
+      else ans.append(c);
+    }
+    return ans.toString();
+  }
+}
+```
+

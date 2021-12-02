@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 03]数组中重复的数字.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 03]数组中重复的数字.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 03]数组中重复的数字.java" />
+              <option name="questionId" value="100275" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 04]二维数组中的查找.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 04]二维数组中的查找.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 04]二维数组中的查找.java" />
+              <option name="questionId" value="100276" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 05]替换空格.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 05]替换空格.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 05]替换空格.java" />
+              <option name="questionId" value="100280" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 06]从尾到头打印链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 06]从尾到头打印链表.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 06]从尾到头打印链表.java" />
+              <option name="questionId" value="100282" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 09]用两个栈实现队列.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 09]用两个栈实现队列.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 09]用两个栈实现队列.java" />
+              <option name="questionId" value="100273" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 11]旋转数组的最小数字.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 11]旋转数组的最小数字.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 11]旋转数组的最小数字.java" />
+              <option name="questionId" value="100278" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 24]反转链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 24]反转链表.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 24]反转链表.java" />
+              <option name="questionId" value="100298" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 30]包含min函数的栈.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 30]包含min函数的栈.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 30]包含min函数的栈.java" />
+              <option name="questionId" value="100302" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 35]复杂链表的复制.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 35]复杂链表的复制.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 35]复杂链表的复制.java" />
+              <option name="questionId" value="100300" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 53 - II]0～n-1中缺失的数字.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 53 - II]0～n-1中缺失的数字.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 53 - II]0～n-1中缺失的数字.java" />
+              <option name="questionId" value="100331" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 53 - I]在排序数组中查找数字 I.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 53 - I]在排序数组中查找数字 I.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 53 - I]在排序数组中查找数字 I.java" />
+              <option name="questionId" value="100329" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 58 - II]左旋转字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 58 - II]左旋转字符串.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 58 - II]左旋转字符串.java" />
+              <option name="questionId" value="100330" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/v3/0z_tv8qx5sn5wl35hkpbt5h00000gn/T/leetcode/editor/cn/[剑指 Offer 09]用两个栈实现队列.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 09]用两个栈实现队列.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 09]用两个栈实现队列.java" />
+              <option name="questionId" value="100273" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/v3/0z_tv8qx5sn5wl35hkpbt5h00000gn/T/leetcode/editor/cn/[剑指 Offer 10- I]斐波那契数列.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/v3/0z_tv8qx5sn5wl35hkpbt5h00000gn/T/leetcode/editor/cn/doc/content/[剑指 Offer 10- I]斐波那契数列.md" />
+              <option name="path" value="/var/folders/v3/0z_tv8qx5sn5wl35hkpbt5h00000gn/T/leetcode/editor/cn/[剑指 Offer 10- I]斐波那契数列.java" />
+              <option name="questionId" value="100274" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/v3/0z_tv8qx5sn5wl35hkpbt5h00000gn/T/leetcode/editor/cn/[剑指 Offer 30]包含min函数的栈.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 30]包含min函数的栈.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 30]包含min函数的栈.java" />
+              <option name="questionId" value="100302" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
