@@ -1,0 +1,55 @@
+### 解题思路
+
+- 队列；层次遍历
+- 遍历所有节点，队列插入删除操作为常数，时间复杂度O(n)
+- 需要一个vector储存返回结果，一个队列最多储存一个层数量的节点，空间复杂度O(n)
+
+### 代码
+
+* cpp
+
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+
+    vector<int> levelOrder(TreeNode* root) 
+    {
+        if(!root)
+        {
+            return {};
+        }
+        
+        vector<int> res;
+        iQueue.push(root);
+        while(!iQueue.empty())
+        {
+            auto tmp = iQueue.front();
+            res.push_back(tmp->val);
+            
+            if(tmp->left)
+            {
+                iQueue.push(tmp->left);
+            }
+            if(tmp->right)
+            {
+                iQueue.push(tmp->right);
+            }
+            iQueue.pop();
+        }
+        return res;
+    }
+
+private:
+    queue<TreeNode*> iQueue;
+};
+```
+

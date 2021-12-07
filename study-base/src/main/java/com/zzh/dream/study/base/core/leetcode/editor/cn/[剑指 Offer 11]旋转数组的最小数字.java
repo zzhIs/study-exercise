@@ -8,7 +8,8 @@ package com.zzh.dream.study.base.core.leetcode.editor.cn;//把一个数组最开
 // 
 //输入：[3,4,5,1,2]
 //输出：1
-// 
+// :wq
+
 //
 // 示例 2： 
 //
@@ -23,9 +24,15 @@ package com.zzh.dream.study.base.core.leetcode.editor.cn;//把一个数组最开
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution05 {
+class Solution052 {
     public int minArray(int[] numbers) {
-        return 0;
+        int index = 0;
+        for (int i = 0; i < numbers.length-1 ; i++) {
+            if (numbers[i] > numbers[i+1]) {
+                index = i+1;
+            }
+        }
+        return numbers[index];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

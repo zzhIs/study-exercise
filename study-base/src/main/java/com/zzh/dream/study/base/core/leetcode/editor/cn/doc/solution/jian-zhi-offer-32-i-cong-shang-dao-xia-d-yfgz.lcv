@@ -1,0 +1,52 @@
+### 解题思路
+
+- 层序遍历
+- 使用queue实现
+- 最后将list转换为int[]时，Lamda和for循环方式效率差异比较大
+  - Lamda表达式效率比较低
+    ![Lamda表达式](https://pic.leetcode-cn.com/1638235957-QjADdQ-image.png)
+
+  - for循环转换效率比较高
+    ![for循环](https://pic.leetcode-cn.com/1638235944-zkOYwx-image.png)
+
+### 代码
+
+* java
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+  public int[] levelOrder(TreeNode root) {
+    if (root == null) return new int[0];
+    List<Integer> list = new ArrayList<>();
+    Deque<TreeNode> queue = new LinkedList<>();
+    queue.add(root);
+    while (!queue.isEmpty()) {
+      int size = queue.size();
+      // 遍历当前层
+      for (int i = 0; i < size; i++) {
+        TreeNode node = queue.poll();
+        // 将当前层节点值存入list中
+        list.add(node.val);
+        // 将左子节点放入queue
+        if (node.left != null) queue.offer(node.left);
+        // 将右子节点放入queue
+        if (node.right != null) queue.offer(node.right);
+      }
+    }
+    //    return list.stream().mapToInt(integer -> integer).toArray();
+    int[] ans = new int[list.size()];
+    for (int i = 0; i < list.size(); i++) ans[i] = list.get(i);
+    return ans;
+  }
+}
+```
+

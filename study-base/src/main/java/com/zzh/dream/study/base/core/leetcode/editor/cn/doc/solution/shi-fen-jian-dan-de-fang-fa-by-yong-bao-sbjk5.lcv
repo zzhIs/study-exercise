@@ -1,0 +1,53 @@
+### 解题思路
+
+我觉得没必要用双端队列，或者链表反转。如果是奇数层，在向list中添加元素时，始终往第一个元素处添加，即list.add(0,node.val)不就自然反转了嘛？
+在上一题的基础上，只需要添加两行代码。
+
+### 代码
+
+* java
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> lists = new ArrayList<>();
+        Deque<TreeNode> deque = new LinkedList<>();
+        int index = 0;
+        int round = 0;
+        if(root != null)
+            deque.offer(root);
+        while(!deque.isEmpty()){
+            List<Integer> list = new ArrayList<>();
+            for(index = deque.size(); index > 0; index--){
+                TreeNode node = deque.poll();
+                if(round % 2 == 1)
+                    list.add(0, node.val);
+                else{
+                    list.add(node.val);
+                }
+                if(node.left != null){
+                    deque.offer(node.left);
+                }
+                if(node.right != null){
+                    deque.offer(node.right);
+                }
+            }
+            lists.add(list);
+            round++;
+        }
+        return lists;
+            
+    }
+}
+
+```
+
