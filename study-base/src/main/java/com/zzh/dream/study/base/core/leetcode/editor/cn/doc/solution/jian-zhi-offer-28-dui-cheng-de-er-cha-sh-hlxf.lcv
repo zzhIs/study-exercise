@@ -1,0 +1,66 @@
+### 解题思路
+
+双队列一个从左向右，一个从右向左，但是注意判断空指针
+
+### 代码
+
+* java
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        Queue<TreeNode> left = new LinkedList<>();
+        Queue<TreeNode> right = new LinkedList<>();
+        TreeNode lp;
+        TreeNode rp;
+        if(root == null){
+            return true;
+        }
+        left.offer(root);
+        right.offer(root);
+        int r,l;
+        
+        while(!left.isEmpty()){
+            r=0;
+            l=0;
+            lp = left.poll();
+            rp = right.poll();
+            if(lp.val != rp.val ){
+                return false;
+            }
+            if(lp.left != null){
+                l =1;
+                left.offer(lp.left);
+            }
+            if(lp.right != null){
+                r= 1;
+                left.offer(lp.right);
+            }
+            if(rp.right == null && l==1){
+                return false;
+            }
+            if(rp.left == null && r==1){
+                return false;
+            }
+            if(rp.right != null){
+                
+                right.offer(rp.right);
+            }
+            if(rp.left !=null){
+                right.offer(rp.left);
+            }
+        }
+        return true;
+    }
+}
+```
+

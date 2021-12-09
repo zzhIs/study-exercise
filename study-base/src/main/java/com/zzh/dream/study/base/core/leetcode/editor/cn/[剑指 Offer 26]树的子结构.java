@@ -37,26 +37,28 @@ package com.zzh.dream.study.base.core.leetcode.editor.cn;//输入两棵二叉树
 //leetcode submit region begin(Prohibit modification and deletion)
 
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
+ * 思路：
+ * 确认好匹配成功的出口，初始B 不等于null，匹配到最终B为null，没有报不相等就是匹配成功；
+ * 匹配失败的情况：a为空，或者a和b不相等；
+ * 匹配节点：初始节点，初始节点的子节点；
  * }
  */
-class Solution {
+class Solution071 {
     public boolean isSubStructure(TreeNode A, TreeNode B) {
-        if (B == null) {
+        if (B == null || A == null) {
             return false;
         }
-        if (A != null) {
-            return (A.val == B.val)
-                    && (isSubStructure(A.left,B.left))
-                    && (isSubStructure(A.right,B.right));
-        }
-        return false;
+        return match(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B);
+    }
 
+    private Boolean match(TreeNode a, TreeNode b) {
+        if (b == null) {
+            return true;
+        }
+        if (a == null || a.val != b.val) {
+            return false;
+        }
+        return match(a.left, b.left) && match(a.right, b.right);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

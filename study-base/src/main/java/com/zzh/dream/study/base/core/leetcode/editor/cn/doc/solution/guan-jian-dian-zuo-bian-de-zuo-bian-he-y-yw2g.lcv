@@ -1,0 +1,31 @@
+### 解题思路
+
+### 代码
+
+* javascript
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isSymmetric = function(root) {
+    if(!root) return true;
+    function dfs(left, right) {
+        if(!left && !right) return true; //如果都没有了 就是true；
+        if(!left || !right) return false; //如果有一边没有 就是false；
+        if(left.val !== right.val) return false; //如果都有但是值不一样也是 false
+        // 然后就递归 左边的左边和右边的右边比较 && 左边的右边和右边的左边比较
+        return dfs(left.left,right.right) && dfs(left.right,right.left); 
+    }
+    return dfs(root.left,root.right);
+};
+```
+
