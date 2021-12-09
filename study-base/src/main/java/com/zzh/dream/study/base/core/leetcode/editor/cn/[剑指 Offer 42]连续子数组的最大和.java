@@ -29,6 +29,7 @@ package com.zzh.dream.study.base.core.leetcode.editor.cn;//输入一个整型数
 class Solution {
     public int maxSubArray(int[] nums) {
 
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
