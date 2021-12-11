@@ -26,10 +26,15 @@ package com.zzh.dream.study.base.core.leetcode.editor.cn;//输入一个整型数
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution091 {
     public int maxSubArray(int[] nums) {
-
-        return 0;
+        int res = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            nums[i] += Math.max(nums[i - 1], 0);
+            res = Math.max(res, nums[i]);
+        }
+        return res;
     }
 }
+
 //leetcode submit region end(Prohibit modification and deletion)
