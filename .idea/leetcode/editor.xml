@@ -75,6 +75,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 18]删除链表的节点.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 18]删除链表的节点.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 18]删除链表的节点.java" />
+              <option name="questionId" value="100299" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 24]反转链表.java">
           <value>
             <LeetcodeEditor>
@@ -162,6 +171,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 42]连续子数组的最大和.md" />
               <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 42]连续子数组的最大和.java" />
               <option name="questionId" value="100304" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 46]把数字翻译成字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[剑指 Offer 46]把数字翻译成字符串.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[剑指 Offer 46]把数字翻译成字符串.java" />
+              <option name="questionId" value="100325" />
             </LeetcodeEditor>
           </value>
         </entry>
