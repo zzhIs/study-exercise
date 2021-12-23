@@ -14,6 +14,7 @@
         <module>study-base</module>
         <module>study-nacos</module>
         <module>study-dubbo</module>
+        <module>study-zookeeper</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

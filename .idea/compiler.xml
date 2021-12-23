@@ -7,18 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo-nacos-consumers" />
-        <module name="nacos-consumers" />
-        <module name="eureka-client" />
+        <module name="zookeeper-server" />
         <module name="study-feign" />
-        <module name="nacos-config" />
-        <module name="dubbo-nacos-api" />
+        <module name="zookeeper-clinet" />
         <module name="dubbo-nacos-provider" />
         <module name="study-feign1" />
-        <module name="nacos-provider" />
         <module name="nacos-feign" />
         <module name="eureka-server" />
         <module name="study-base" />
+        <module name="dubbo-nacos-consumers" />
+        <module name="nacos-consumers" />
+        <module name="eureka-client" />
+        <module name="nacos-config" />
+        <module name="dubbo-nacos-api" />
+        <module name="nacos-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -39,6 +41,9 @@
       <module name="study-feign1" target="1.8" />
       <module name="study-java" target="1.8" />
       <module name="study-nacos" target="1.8" />
+      <module name="study-zookeeper" target="1.8" />
+      <module name="zookeeper-clinet" target="1.8" />
+      <module name="zookeeper-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -60,6 +65,9 @@
       <module name="study-feign1" options="-parameters" />
       <module name="study-java" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
+      <module name="study-zookeeper" options="-parameters" />
+      <module name="zookeeper-clinet" options="-parameters" />
+      <module name="zookeeper-server" options="-parameters" />
     </option>
   </component>
 </project>

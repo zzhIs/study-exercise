@@ -17,6 +17,9 @@
       <module fileurl="file://$PROJECT_DIR$/study-feign/study-feign.iml" filepath="$PROJECT_DIR$/study-feign/study-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-feign1/study-feign1.iml" filepath="$PROJECT_DIR$/study-feign1/study-feign1.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" filepath="$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/zookeeper-clinet.iml" filepath="$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/zookeeper-clinet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-zookeeper/zookeeper-server/zookeeper-server.iml" filepath="$PROJECT_DIR$/study-zookeeper/zookeeper-server/zookeeper-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/zzh-spring/zzh-spring.iml" filepath="$PROJECT_DIR$/zzh-spring/zzh-spring.iml" />
     </modules>
   </component>

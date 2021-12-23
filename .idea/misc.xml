@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/study-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/study-eureka/eureka-client/pom.xml" />
         <option value="$PROJECT_DIR$/study-nacos/nacos-config/pom.xml" />
+        <option value="$PROJECT_DIR$/study-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/pom.xml" />
+        <option value="$PROJECT_DIR$/study-zookeeper/zookeeper-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
