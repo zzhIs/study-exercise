@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zookeeper-server" />
+        <module name="study-mongodb" />
         <module name="study-feign" />
         <module name="zookeeper-clinet" />
         <module name="dubbo-nacos-provider" />
@@ -40,6 +41,7 @@
       <module name="study-feign" target="1.8" />
       <module name="study-feign1" target="1.8" />
       <module name="study-java" target="1.8" />
+      <module name="study-mongodb" target="1.8" />
       <module name="study-nacos" target="1.8" />
       <module name="study-zookeeper" target="1.8" />
       <module name="zookeeper-clinet" target="1.8" />
@@ -64,6 +66,7 @@
       <module name="study-feign" options="-parameters" />
       <module name="study-feign1" options="-parameters" />
       <module name="study-java" options="-parameters" />
+      <module name="study-mongodb" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
       <module name="study-zookeeper" options="-parameters" />
       <module name="zookeeper-clinet" options="-parameters" />
