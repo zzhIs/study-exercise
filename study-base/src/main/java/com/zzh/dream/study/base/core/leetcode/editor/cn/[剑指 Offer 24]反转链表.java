@@ -26,9 +26,6 @@ package com.zzh.dream.study.base.core.leetcode.editor.cn;//定义一个函数，
  */
 class Solution022 {
     public ListNode reverseList(ListNode head) {
-        if (head == null) {
-            return null;
-        }
         ListNode pre = null;
         while(head!=null){
             //临时节点保存原链表下一个节点

@@ -5,6 +5,9 @@ import com.zzh.dream.study.base.mapper.UserMapper;
 import com.zzh.dream.study.base.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+import tk.mybatis.mapper.common.Mapper;
 
 /**
  * @description: TODO 类描述
@@ -18,7 +21,14 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public User selectById(String id) {
+    public User selectById(Integer id) {
         return userMapper.selectById(id);
+    }
+
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class,propagation = Propagation.REQUIRED)
+    public void insert(User user) {
+        userMapper.insert(user);
+        int i = 1/0;
     }
 }

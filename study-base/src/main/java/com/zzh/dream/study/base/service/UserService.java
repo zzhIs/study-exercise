@@ -9,5 +9,7 @@ import com.zzh.dream.study.base.entity.User;
  **/
 public interface UserService {
 
-    User selectById(String id);
+    User selectById(Integer id);
+
+    void insert(User user);
 }

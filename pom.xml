@@ -16,6 +16,7 @@
         <module>study-dubbo</module>
         <module>study-zookeeper</module>
         <module>study-mongodb</module>
+        <module>study-rabbitmq</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

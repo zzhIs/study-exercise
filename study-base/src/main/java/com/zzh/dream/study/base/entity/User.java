@@ -1,7 +1,9 @@
 package com.zzh.dream.study.base.entity;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -11,8 +13,10 @@ import java.util.Date;
  * @date: 26/08/2021
  **/
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
-    private String id;
+    private Integer id;
     private String userName;
     private Date createTime;
 }

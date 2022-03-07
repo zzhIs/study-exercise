@@ -23,3 +23,7 @@ study-dubbo:
     
 study-zookeeper:
     zookeeper-clinet:10007
+    
+study-rabbitmq
+    rabbitmq-producer:10008
+    rabbitmq-consumer:10009

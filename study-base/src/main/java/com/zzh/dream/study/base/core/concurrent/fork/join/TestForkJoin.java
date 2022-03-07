@@ -24,7 +24,7 @@ public class TestForkJoin {
 
         //采用fork/join方式将数组求和任务进行拆分执行，最后合并结果
         LongSum ls = new LongSum(array, 0, array.length);
-        ForkJoinPool fjp  = new ForkJoinPool(4); //使用的线程数
+        ForkJoinPool fjp  = new ForkJoinPool(); //使用的线程数
         ForkJoinTask<Long> result = fjp.submit(ls);
         fjp.shutdown();
 

@@ -7,6 +7,13 @@
         <result column="user_name" property="userName"/>
         <result column="create_time" property="createTime"/>
     </resultMap>
+
+    <insert id="insert" parameterType="com.zzh.dream.study.base.entity.User">
+    insert into user (id, user_name, create_time
+      )
+    values (#{user.id}, #{user.userName}, #{user.createTime}
+      )
+  </insert>
     <select id="selectById" resultMap="BaseResultMap">
         select u.* from user u  where u.id=#{id}
     </select>

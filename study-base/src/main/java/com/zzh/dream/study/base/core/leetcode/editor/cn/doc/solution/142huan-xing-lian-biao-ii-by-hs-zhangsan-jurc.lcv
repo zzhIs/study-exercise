@@ -1,0 +1,55 @@
+### 解题思路
+
+- 这道题主要考察两点：
+  1. 链表是否有环（也即 [141.环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) ）
+  2. 若链表有环，如何找到入环结点
+
+#### 判断链表是否有环
+
+- 使用快慢指针，从头结点出发，fast 指针每次移动两个节点，slow 指针每次移动一个节点，若 fast 和 slow 在途中相遇 ，则说明这个链表有环。
+- 这里需要明确两点：
+  - **若 fast 和 slow 相遇，则一定在环中相遇**
+  - **若链表有环，则 fast 和 slow 一定会相遇**
+- 接下来分析其原因：
+  - fast 一定先入环，之后一直在环中循环，因此若相遇，一定是在环中。
+  - 当 slow 也入环后，实际上就成了 fast 追赶 slow，而 fast 每次追上一步，由于环没有终点，因此 fast 必定会追上 slow，两者相遇。
+
+#### 若链表有环，如何找到入环结点
+
+- 这里需要一点简单的数学推导，假设头结点到入环结点之间的结点数为 a， 入环结点到 fast 与 slow 相遇结点之间的结点数为 b， 相遇结点再到入环结点之间的结点数为 c。则 fast 走过的结点数 `lenFast = a + b + n(b + c)`，slow 走过的结点数 `lenSlow = a + b`，而 `lenFast = 2 * lenSlow`，简单的公式推导后可得 `a = (n - 1) * (b + c) + c`。这里用 a 表示是因为要求的是入环结点，而 a 正是头结点到入环结点之间的结点数。如图所示：
+  ![142.环形链表II.jpg](https://pic.leetcode-cn.com/1644843059-bsKfiJ-142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.jpg)
+- 从 `a = (n - 1) * (b + c) + c` 中我们可以得到什么呢？
+  答案是：**若两个指针分别从头结点和相遇结点同时出发，每次都向前移动一步，那么它们会在入环结点处相遇。** 其中从相遇结点处出发的指针一共绕环走了 n-1 圈，显然 n 是大于等于 1 的。
+- **注意**，之所以在相遇时 slow 走过的结点数为 a+b 而不是 a+m(b+c)+b，是因为 fast 每次追一步，即使在极端情况「slow 入环时 fast 在其前一个结点」下，fast 也会先于 slow 走完一圈前追到 slow。如图所示（**认真看！**）：
+  ![142.环形链表II02.jpg](https://pic.leetcode-cn.com/1644846957-LKgQyN-142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II02.jpg)
+
+### 代码
+
+* c
+
+```c
+struct ListNode *detectCycle(struct ListNode *head) {
+    struct ListNode* fast = head;
+    struct ListNode* slow = head;
+    while (fast && fast->next) {
+        fast = fast->next->next;
+        slow = slow->next;
+        if (fast == slow) {
+            slow = head;
+            while (fast != slow) {
+                fast = fast->next;
+                slow = slow->next;
+            }
+            return fast;
+        }
+    }
+    return NULL;
+}
+```
+
+### 复杂度分析
+
+时间复杂度：$O(n)$
+空间复杂度：$O(1)$
+
+写题解不易，若对你有帮助，点赞评论再走吧。ヽ(✿ﾟ▽ﾟ)ノ

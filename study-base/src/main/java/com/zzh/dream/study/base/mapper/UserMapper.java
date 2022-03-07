@@ -10,5 +10,7 @@ import org.apache.ibatis.annotations.Param;
  **/
 public interface UserMapper {
 
-    User selectById(@Param("id") String id);
+    User selectById(@Param("id") Integer id);
+
+    void insert(@Param("user") User user);
 }

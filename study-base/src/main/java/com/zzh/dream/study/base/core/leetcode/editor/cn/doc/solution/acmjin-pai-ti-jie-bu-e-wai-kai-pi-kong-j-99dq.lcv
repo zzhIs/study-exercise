@@ -1,0 +1,48 @@
+# 题解
+
+方法一和二时间复杂度都为O(n)。
+**方法一：空间复杂度O(n)**
+哈希表记录每个数字是否出现，C++中可以使用 unorder_map，遍历数组记录每个数字是否出现。
+
+**方法二：空间复杂度O(1)**
+不开辟额外空间，原数组 nums 是否可以作为哈希表来使用呢？
+直接将数组 nums 作为哈希表，会覆盖原来的值，导致出错。
+如何利用 nums 作为辅助数组，来记录每个数字是否出现呢？
+对于第 i 个数字 nums[i]，我们位置 (nums[i] - 1) % n 的位置增加 n，这样不会覆盖原数组，因为 (nums[i] - 1) % n  = (nums[i] - 1 + n) % n，这样如果最后遍历完数组，nums[i] 小于等于 n，就是数组中中消失的数字。
+**下图以示例数据为例，演示了方法二的思路。**
+![](https://pic.leetcode-cn.com/1631863483-cjiOgj-image.png)
+
+# 代码
+
+* c++
+
+```c++
+class Solution {
+public:
+    vector<int> findDisappearedNumbers(vector<int>& nums) {
+        vector<int> ans;
+        int n = nums.size();
+        for (int i = 0; i < nums.size(); i++) {
+            int x = (nums[i] - 1) % n;
+            nums[x] += n;
+        }
+        for (int i = 0; i < n; i++) {
+            if (nums[i] <= n) 
+                ans.push_back(i + 1);
+        }
+        return ans;
+    }
+};
+```
+
+# 最后
+
+大家好，我是编程熊，字节跳动、旷视科技前员工，ACM亚洲区域赛金牌，欢迎 [关注我](https://leetcode-cn.com/u/bianchengxiong/) 和加入 [LeetCode组队刷题群](https://mp.weixin.qq.com/s/TsTcCDboXwnTnUeIW3Zg9Q)。
+
+分享几篇算法超级易懂的文章，希望对你有所帮助
+1、[ACM金牌选手讲解LeetCode算法《线性表》](https://mp.weixin.qq.com/s/qwaYOFIksFVqZtA_nisl6g)
+2、[ACM金牌选手讲解LeetCode算法《栈和队列的高级应用》](https://mp.weixin.qq.com/s/I3DQOUmABmWav4nrAiI3Fg)
+3、[ACM金牌选手讲解LeetCode算法《哈希表》](https://mp.weixin.qq.com/s/af4gvYURUoCTfsyzsI9Www)
+4、[ACM金牌选手讲解LeetCode算法《二叉树》](https://mp.weixin.qq.com/s/8AcRNQS0Nno2_fU6kMtZeQ)
+
+如果题解和文章对你有所帮助，欢迎**点赞**支持

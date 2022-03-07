@@ -22,6 +22,10 @@
         <option value="$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/pom.xml" />
         <option value="$PROJECT_DIR$/study-zookeeper/zookeeper-server/pom.xml" />
         <option value="$PROJECT_DIR$/study-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/study-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/study-rabbitmq/rabbitmq-core/pom.xml" />
+        <option value="$PROJECT_DIR$/study-rabbitmq/rabbitmq-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/study-rabbitmq/rabbitmq-producer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

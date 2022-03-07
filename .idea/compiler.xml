@@ -7,12 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rabbitmq-core" />
+        <module name="rabbitmq-consumer" />
         <module name="zookeeper-server" />
         <module name="study-mongodb" />
         <module name="study-feign" />
         <module name="zookeeper-clinet" />
         <module name="dubbo-nacos-provider" />
         <module name="study-feign1" />
+        <module name="rabbitmq-producer" />
         <module name="nacos-feign" />
         <module name="eureka-server" />
         <module name="study-base" />
@@ -34,6 +37,9 @@
       <module name="nacos-consumers" target="1.8" />
       <module name="nacos-feign" target="1.8" />
       <module name="nacos-provider" target="1.8" />
+      <module name="rabbitmq-consumer" target="1.8" />
+      <module name="rabbitmq-core" target="1.8" />
+      <module name="rabbitmq-producer" target="1.8" />
       <module name="study-base" target="1.8" />
       <module name="study-dubbo" target="1.8" />
       <module name="study-eureka" target="1.8" />
@@ -43,6 +49,7 @@
       <module name="study-java" target="1.8" />
       <module name="study-mongodb" target="1.8" />
       <module name="study-nacos" target="1.8" />
+      <module name="study-rabbitmq" target="1.8" />
       <module name="study-zookeeper" target="1.8" />
       <module name="zookeeper-clinet" target="1.8" />
       <module name="zookeeper-server" target="1.8" />
@@ -59,6 +66,9 @@
       <module name="nacos-consumers" options="-parameters" />
       <module name="nacos-feign" options="-parameters" />
       <module name="nacos-provider" options="-parameters" />
+      <module name="rabbitmq-consumer" options="-parameters" />
+      <module name="rabbitmq-core" options="-parameters" />
+      <module name="rabbitmq-producer" options="-parameters" />
       <module name="study-base" options="-parameters" />
       <module name="study-dubbo" options="-parameters" />
       <module name="study-eureka" options="-parameters" />
@@ -68,6 +78,7 @@
       <module name="study-java" options="-parameters" />
       <module name="study-mongodb" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
+      <module name="study-rabbitmq" options="-parameters" />
       <module name="study-zookeeper" options="-parameters" />
       <module name="zookeeper-clinet" options="-parameters" />
       <module name="zookeeper-server" options="-parameters" />

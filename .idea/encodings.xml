@@ -10,6 +10,9 @@
     <file url="file://$PROJECT_DIR$/study-nacos/nacos-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-nacos/nacos-consumers/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-nacos/nacos-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-producer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/src/main/java" charset="UTF-8" />
   </component>
 </project>
