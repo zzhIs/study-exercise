@@ -1,6 +1,6 @@
 package com.zzh.dream.rabbitmqcore.configuration;
 
-import org.mybatis.spring.annotation.MapperScan;
+import tk.mybatis.spring.annotation.MapperScan;
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
@@ -20,7 +20,7 @@ import org.springframework.context.annotation.PropertySource;
  **/
 @Configuration
 @ComponentScan({"com.zzh.dream"})
-@MapperScan({"com.zzh.dream.rabbitmq.mapper"})
+@MapperScan({"com.zzh.dream.rabbitmqcore.mapper"})
 @PropertySource("classpath:application.properties")
 public class RabbitMqConfiguration {
 
@@ -32,7 +32,7 @@ public class RabbitMqConfiguration {
     private String username;
     @Value("${spring.rabbitmq.password}")
     private String password;
-    @Value("${spring.rabbitmq.virtualHost}")
+    @Value("${spring.rabbitmq.virtual-host}")
     private String virtualHost;
     @Value("${spring.rabbitmq.prefetch_count:10}")
     private Integer prefetchCount;
@@ -47,10 +47,11 @@ public class RabbitMqConfiguration {
 
     /**
      * 设置连接工厂
+     *
      * @return
      */
     @Bean
-    public ConnectionFactory connectionFactory(){
+    public ConnectionFactory connectionFactory() {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
         connectionFactory.setHost(this.host);
         connectionFactory.setPort(this.port);
@@ -63,8 +64,14 @@ public class RabbitMqConfiguration {
     }
 
 
+    /**
+     * 监听者工厂
+     *
+     * @param connectionFactory
+     * @return
+     */
     @Bean
-    public RabbitListenerContainerFactory rabbitListenerContainerFactory(ConnectionFactory connectionFactory){
+    public RabbitListenerContainerFactory rabbitListenerContainerFactory(ConnectionFactory connectionFactory) {
         SimpleRabbitListenerContainerFactory containerFactory = new SimpleRabbitListenerContainerFactory();
         containerFactory.setConnectionFactory(connectionFactory);
         containerFactory.setAcknowledgeMode(AcknowledgeMode.MANUAL);

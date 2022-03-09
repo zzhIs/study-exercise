@@ -27,8 +27,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>com.zzh.dream</groupId>
+			<artifactId>rabbitmq-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

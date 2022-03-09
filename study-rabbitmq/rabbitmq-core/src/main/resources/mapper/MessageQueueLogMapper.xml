@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.zzh.dream.rabbitmqcore.mapper.MessageQueueLogMapper" >
-  <resultMap id="BaseResultMap" type="com.zzh.dream.rabbitmqcore.entity.MessageQueueLog" >
+  <resultMap id="BaseResultMap" type="com.zzh.dream.rabbitmqcore.entity.TbMessageQueueLog" >
     <result column="id" property="id" jdbcType="VARCHAR" />
     <result column="reference_id" property="referenceId" jdbcType="VARCHAR" />
     <result column="reference_type" property="referenceType" jdbcType="VARCHAR" />
@@ -22,7 +22,7 @@
     <result column="upd_user" property="updUser" jdbcType="VARCHAR" />
     <result column="upd_date" property="updDate" jdbcType="DATE" />
   </resultMap>
-  <insert id="insert" parameterType="com.zzh.dream.rabbitmqcore.entity.MessageQueueLog" >
+  <insert id="insert" parameterType="com.zzh.dream.rabbitmqcore.entity.TbMessageQueueLog" >
     insert into message_queue_log (id, reference_id, reference_type, 
       exchange_name, routing_key, message, 
       confirm_time, consume_num, fail_cause, 
@@ -44,4 +44,8 @@
     app_id, crt_user, crt_time, upd_user, upd_date
     from message_queue_log
   </select>
+
+  <update id="tryConsume">
+        update message_queue_log set status = 'CONSUMING' where id = #{id} and is_deleted = '0' and status in ('PREPARED','FAIL')
+    </update>
 </mapper>

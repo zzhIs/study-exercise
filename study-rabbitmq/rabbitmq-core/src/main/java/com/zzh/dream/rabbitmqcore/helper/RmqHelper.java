@@ -1,7 +1,8 @@
 package com.zzh.dream.rabbitmqcore.helper;
 
 import cn.hutool.json.JSONUtil;
-import com.zzh.dream.rabbitmqcore.entity.MessageQueueLog;
+import com.zzh.dream.rabbitmqcore.dto.MessageQueueDTO;
+import com.zzh.dream.rabbitmqcore.entity.TbMessageQueueLog;
 import com.zzh.dream.rabbitmqcore.service.MessageQueueLogService;
 import com.zzh.dream.rabbitmqcore.util.UUIDUtils;
 import org.slf4j.Logger;
@@ -20,31 +21,44 @@ import org.springframework.util.StringUtils;
  * @date: 15/01/2022
  **/
 @Component
-public class ProductHelper {
+public class RmqHelper {
 
-    private static final Logger log = LoggerFactory.getLogger(ProductHelper.class);
-
+    private static final Logger log = LoggerFactory.getLogger(RmqHelper.class);
+    @Autowired
     private RabbitTemplate rabbitTemplate;
     @Autowired
     private MessageQueueLogService messageQueueLogService;
 
-    public ProductHelper() {
+    public RmqHelper() {
     }
 
-    public void sendMessageToMq(MessageQueueLog messageQueueLog){
+    /**
+     * 消息发送端使用此工具类发送消息
+     *
+     * @param dto
+     */
+    public void push(MessageQueueDTO dto) {
+        //todo 消息先落库
+        messageQueueLogService.insertMessageLog(dto);
+
+        //发送到MQ
+        this.sendMessageToMq(dto);
+    }
+
+    public void sendMessageToMq(MessageQueueDTO messageQueueLog) {
         if (TransactionSynchronizationManager.isSynchronizationActive()) {
             log.info("事务同步器已开启，延迟执行");
-            TransactionSynchronizationManager.registerSynchronization(new ProductHelper.RmqSynchronization(messageQueueLog));
+            TransactionSynchronizationManager.registerSynchronization(new RmqHelper.RmqSynchronization(messageQueueLog));
         } else {
             log.info("事务同步器未开启，直接执行任务");
-            (new ProductHelper.RmqSynchronization(messageQueueLog)).run();
+            (new RmqHelper.RmqSynchronization(messageQueueLog)).run();
         }
     }
 
     public class RmqSynchronization extends TransactionSynchronizationAdapter {
-        private MessageQueueLog message;
+        private MessageQueueDTO message;
 
-        public RmqSynchronization(MessageQueueLog dto) {
+        public RmqSynchronization(MessageQueueDTO dto) {
             this.message = dto;
         }
 
@@ -52,12 +66,15 @@ public class ProductHelper {
             this.run();
         }
 
+        /**
+         * 推送消息
+         */
         private void run() {
-            ProductHelper.log.info("开始推送消息到MQ");
+            RmqHelper.log.info("开始推送消息到MQ");
             String id = this.message.getId();
             CorrelationData correlationData = new CorrelationData(StringUtils.isEmpty(id) ? UUIDUtils.get32UUID() : id);
-            ProductHelper.this.rabbitTemplate.convertAndSend(this.message.getExchangeName(), this.message.getRoutingKey(),
-                    JSONUtil.toJsonStr(this.message),correlationData);
+            RmqHelper.this.rabbitTemplate.convertAndSend(this.message.getExchangeName(), this.message.getRoutingKey(),
+                    JSONUtil.toJsonStr(this.message), correlationData);
         }
     }
 }
