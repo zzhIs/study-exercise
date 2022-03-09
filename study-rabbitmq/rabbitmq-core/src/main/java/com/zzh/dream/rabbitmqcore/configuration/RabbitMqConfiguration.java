@@ -20,6 +20,7 @@ import org.springframework.context.annotation.PropertySource;
  **/
 @Configuration
 @ComponentScan({"com.zzh.dream"})
+//如果使用tk-Mybatis记得使用tk的MapperScan
 @MapperScan({"com.zzh.dream.rabbitmqcore.mapper"})
 @PropertySource("classpath:application.properties")
 public class RabbitMqConfiguration {
