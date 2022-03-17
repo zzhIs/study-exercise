@@ -1,11 +1,11 @@
-package com.zzh.dream.study.base.core.base.dynamic.proxy.jdk;
+package com.zzh.dream.study.base.design.proxy.jdk;
 
 /**
  * @description: 被代理类
  * @author: zhangzihao
  * @date: 17/08/2021
  **/
-public class Vendor implements Shell{
+public class ShellImpl implements Shell{
     @Override
     public void shell() {
         System.out.println("shell方法执行的实现...");

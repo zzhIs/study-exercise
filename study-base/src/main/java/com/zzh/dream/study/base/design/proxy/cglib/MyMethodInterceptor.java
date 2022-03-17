@@ -1,4 +1,4 @@
-package com.zzh.dream.study.base.core.base.dynamic.proxy.cglib;
+package com.zzh.dream.study.base.design.proxy.cglib;
 
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;

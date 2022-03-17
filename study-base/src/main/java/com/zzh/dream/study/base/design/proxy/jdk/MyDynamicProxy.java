@@ -1,4 +1,4 @@
-package com.zzh.dream.study.base.core.base.dynamic.proxy.jdk;
+package com.zzh.dream.study.base.design.proxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

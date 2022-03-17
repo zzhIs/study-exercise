@@ -26,13 +26,13 @@ public class UserInsertBiz {
     @Transactional(rollbackFor = RuntimeException.class)
     public void insert(){
 
+        myAccountService.insert(new MyAccount(UUID.randomUUID().toString(),"account","account"));
+
         try {
             userService.insert(new User(12345678,"userName",new Date()));
         } catch (Exception e) {
             System.out.println("新增失败...");
 //            e.printStackTrace();
         }
-
-        myAccountService.insert(new MyAccount(UUID.randomUUID().toString(),"account","account"));
     }
 }

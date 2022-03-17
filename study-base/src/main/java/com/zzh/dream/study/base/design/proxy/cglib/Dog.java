@@ -1,4 +1,4 @@
-package com.zzh.dream.study.base.core.base.dynamic.proxy.cglib;
+package com.zzh.dream.study.base.design.proxy.cglib;
 
 /**
  * @description: TODO 类描述
