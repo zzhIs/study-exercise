@@ -19,6 +19,7 @@
         <module name="nacos-feign" />
         <module name="eureka-server" />
         <module name="study-base" />
+        <module name="study-xxl-job" />
         <module name="dubbo-nacos-consumers" />
         <module name="nacos-consumers" />
         <module name="eureka-client" />
@@ -52,6 +53,7 @@
       <module name="study-nacos" target="1.8" />
       <module name="study-rabbitmq" target="1.8" />
       <module name="study-sharding-sphere" target="1.8" />
+      <module name="study-xxl-job" target="1.8" />
       <module name="study-zookeeper" target="1.8" />
       <module name="zookeeper-clinet" target="1.8" />
       <module name="zookeeper-server" target="1.8" />
@@ -82,6 +84,7 @@
       <module name="study-nacos" options="-parameters" />
       <module name="study-rabbitmq" options="-parameters" />
       <module name="study-sharding-sphere" options="-parameters" />
+      <module name="study-xxl-job" options="-parameters" />
       <module name="study-zookeeper" options="-parameters" />
       <module name="zookeeper-clinet" options="-parameters" />
       <module name="zookeeper-server" options="-parameters" />

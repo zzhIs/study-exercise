@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/zzh_test</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="xxl_job" uuid="8ef9200c-8491-41d7-9d7a-6888505f448d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/xxl_job?Unicode=true&amp;characterEncoding=UTF-8</jdbc-url>
+    </data-source>
   </component>
 </project>
