@@ -1,5 +1,6 @@
 package com.zzh.dream.study.base.configuraton;
 
+import com.zzh.dream.study.base.bistoury.BistouryBiz;
 import com.zzh.dream.study.base.interceptor.BaseInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,5 +29,11 @@ public class BaseConfiguration implements WebMvcConfigurer {
     @Bean
     public HandlerInterceptor baseInterceptor(){
         return new BaseInterceptor();
+    }
+
+
+    @Bean
+    public BistouryBiz bistouryBiz(){
+        return new BistouryBiz();
     }
 }

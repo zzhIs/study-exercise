@@ -3,6 +3,15 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[101]对称二叉树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[101]对称二叉树.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[101]对称二叉树.java" />
+              <option name="questionId" value="101" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[10]正则表达式匹配.java">
           <value>
             <LeetcodeEditor>
@@ -288,6 +297,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[70]爬楼梯.md" />
               <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[70]爬楼梯.java" />
               <option name="questionId" value="70" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[82]删除排序链表中的重复元素 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/doc/content/[82]删除排序链表中的重复元素 II.md" />
+              <option name="path" value="$PROJECT_DIR$/study-base/src/main/java/com/zzh/dream/study/base/core/leetcode/editor/cn/[82]删除排序链表中的重复元素 II.java" />
+              <option name="questionId" value="82" />
             </LeetcodeEditor>
           </value>
         </entry>

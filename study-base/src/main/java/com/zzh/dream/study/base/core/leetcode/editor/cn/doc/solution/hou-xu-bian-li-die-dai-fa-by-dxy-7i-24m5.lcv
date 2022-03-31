@@ -1,0 +1,97 @@
+### 解题思路
+
+注意父节点是从右子树访问回来时才出栈
+按照模板方式思考，三种遍历方式都可以很快写出来
+需要想好：
+1、何时写入结果
+2、何时进行出栈
+注意点：出栈之后curNode要置空，防止重复入栈
+
+* 
+
+```
+ /**
+ * 迭代法遍历模板
+ * 需要想好：
+ * 1、何时写入结果
+ * 2、何时进行出栈
+ * 注意点：出栈之后curNode要置空，防止重复入栈
+ */
+private List<Integer> iterateTemplate(TreeNode root) {
+    Deque<TreeNode> stack = new ArrayDeque<>();
+    List<Integer> resultList = new ArrayList<>();
+    TreeNode curNode = root; // 当前节点
+    while (!stack.isEmpty() || curNode != null) {
+        if (curNode != null) {
+           // 左节点入栈过程
+        } else {
+            // 从栈中取
+        }
+    }
+    return resultList;
+}
+```
+
+### 代码
+
+* java
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    
+    /**
+     * 后序遍历
+     * 父节点在栈内会被访问两次，第一次从左子树出栈后访问父节点时，父节点不进行出栈，而是将右子树入栈，继续访问右子树。
+     * 只有当右子树出栈后访问父节点时，父节点才会出栈。
+     * 所以要记录上一个出栈的节点，用来判断一个节点的右子树是否被访问过。
+     * 迭代流程：
+     * 【1】找到最左下方节点并将路径上的节点入栈直到node.left为空
+     * 【2】判断栈顶(最左下方节点)node.right是否为空，不为空则以node.right为起始节点继续【1】的操作
+     * 【3】如果没有右节点/右节点已被访问过，则弹出栈顶元素,并记录当前弹出的节点(用来判断是否是从右子树遍历到父节点)
+     */
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        TreeNode curNode = root; // 标志当前节点（当节点进行入栈时不为空，节点为空时标志该出栈）
+        TreeNode lastPopNode = null;// 记录上一个出栈的node
+        while (!stack.isEmpty() || curNode != null) {
+            if (curNode != null) {
+                // 延左子树向下寻找【1】
+                stack.push(curNode);
+                curNode = curNode.left;
+            } else {
+                // curNode == null 表示左子树遍历到头/正在出栈
+                curNode = stack.peek(); // 先不弹出，可能是第一次访问
+                if (curNode.right == null || curNode.right == lastPopNode) {
+                    // 没有右子树/右子树已访问过【3】
+                    stack.pop(); // 可以弹出
+                    lastPopNode = curNode;
+                    result.add(curNode.val);
+                    curNode = null; // 注意要把curNode置空
+                } else {
+                    // 有右子树且右子树未被访问过【2】
+                    curNode = curNode.right; // 进入右子树
+                }
+            }
+        }
+        return result;
+    }
+
+}
+```
+
