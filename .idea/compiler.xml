@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rabbitmq-core" />
         <module name="rabbitmq-consumer" />
+        <module name="study-elk" />
         <module name="zookeeper-server" />
         <module name="study-mongodb" />
         <module name="study-feign" />
@@ -44,6 +45,7 @@
       <module name="rabbitmq-producer" target="1.8" />
       <module name="study-base" target="1.8" />
       <module name="study-dubbo" target="1.8" />
+      <module name="study-elk" target="1.8" />
       <module name="study-eureka" target="1.8" />
       <module name="study-exercise" target="1.8" />
       <module name="study-feign" target="1.8" />
@@ -75,6 +77,7 @@
       <module name="rabbitmq-producer" options="-parameters" />
       <module name="study-base" options="-parameters" />
       <module name="study-dubbo" options="-parameters" />
+      <module name="study-elk" options="-parameters" />
       <module name="study-eureka" options="-parameters" />
       <module name="study-exercise" options="-parameters" />
       <module name="study-feign" options="-parameters" />

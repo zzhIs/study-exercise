@@ -27,3 +27,5 @@ study-zookeeper:
 study-rabbitmq
     rabbitmq-producer:10008
     rabbitmq-consumer:10009
+    
+study-elk : 10010

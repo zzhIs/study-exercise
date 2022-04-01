@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/study-rabbitmq/rabbitmq-producer/pom.xml" />
         <option value="$PROJECT_DIR$/study-sharding-sphere/pom.xml" />
         <option value="$PROJECT_DIR$/study-xxl-job/pom.xml" />
+        <option value="$PROJECT_DIR$/study-elk/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
