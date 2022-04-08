@@ -15,6 +15,7 @@
         <module name="study-feign" />
         <module name="zookeeper-clinet" />
         <module name="dubbo-nacos-provider" />
+        <module name="rocketmq-producer" />
         <module name="study-feign1" />
         <module name="rabbitmq-producer" />
         <module name="nacos-feign" />
@@ -22,6 +23,7 @@
         <module name="study-base" />
         <module name="study-xxl-job" />
         <module name="dubbo-nacos-consumers" />
+        <module name="rocket-consumer" />
         <module name="nacos-consumers" />
         <module name="eureka-client" />
         <module name="study-sharding-sphere" />
@@ -43,6 +45,8 @@
       <module name="rabbitmq-consumer" target="1.8" />
       <module name="rabbitmq-core" target="1.8" />
       <module name="rabbitmq-producer" target="1.8" />
+      <module name="rocket-consumer" target="1.8" />
+      <module name="rocketmq-producer" target="1.8" />
       <module name="study-base" target="1.8" />
       <module name="study-dubbo" target="1.8" />
       <module name="study-elk" target="1.8" />
@@ -54,6 +58,7 @@
       <module name="study-mongodb" target="1.8" />
       <module name="study-nacos" target="1.8" />
       <module name="study-rabbitmq" target="1.8" />
+      <module name="study-rocketmq" target="1.8" />
       <module name="study-sharding-sphere" target="1.8" />
       <module name="study-xxl-job" target="1.8" />
       <module name="study-zookeeper" target="1.8" />
@@ -75,6 +80,8 @@
       <module name="rabbitmq-consumer" options="-parameters" />
       <module name="rabbitmq-core" options="-parameters" />
       <module name="rabbitmq-producer" options="-parameters" />
+      <module name="rocket-consumer" options="-parameters" />
+      <module name="rocketmq-producer" options="-parameters" />
       <module name="study-base" options="-parameters" />
       <module name="study-dubbo" options="-parameters" />
       <module name="study-elk" options="-parameters" />

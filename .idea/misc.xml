@@ -29,6 +29,7 @@
         <option value="$PROJECT_DIR$/study-sharding-sphere/pom.xml" />
         <option value="$PROJECT_DIR$/study-xxl-job/pom.xml" />
         <option value="$PROJECT_DIR$/study-elk/pom.xml" />
+        <option value="$PROJECT_DIR$/study-rocketmq/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

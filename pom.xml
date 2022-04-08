@@ -18,6 +18,9 @@
         <module>study-mongodb</module>
         <module>study-rabbitmq</module>
         <module>study-xxl-job</module>
+        <module>study-sharding-sphere</module>
+        <module>study-elk</module>
+        <module>study-rocketmq</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

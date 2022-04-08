@@ -29,3 +29,8 @@ study-rabbitmq
     rabbitmq-consumer:10009
     
 study-elk : 10010
+
+
+study-rocketmq:
+    rocketmq-producer:10011
+    rocket-consumer:10012

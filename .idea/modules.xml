@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-consumer/rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/study-rabbitmq/rabbitmq-consumer/rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-core/rabbitmq-core.iml" filepath="$PROJECT_DIR$/study-rabbitmq/rabbitmq-core/rabbitmq-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-producer/rabbitmq-producer.iml" filepath="$PROJECT_DIR$/study-rabbitmq/rabbitmq-producer/rabbitmq-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-rocketmq/rocket-consumer/rocket-consumer.iml" filepath="$PROJECT_DIR$/study-rocketmq/rocket-consumer/rocket-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-rocketmq/rocketmq-producer/rocketmq-producer.iml" filepath="$PROJECT_DIR$/study-rocketmq/rocketmq-producer/rocketmq-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-base/study-base.iml" filepath="$PROJECT_DIR$/study-base/study-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-dubbo/study-dubbo.iml" filepath="$PROJECT_DIR$/study-dubbo/study-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-elk/study-elk.iml" filepath="$PROJECT_DIR$/study-elk/study-elk.iml" />
@@ -23,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/study-mongodb/study-mongodb.iml" filepath="$PROJECT_DIR$/study-mongodb/study-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" filepath="$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" filepath="$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-sharding-sphere/study-sharding-sphere.iml" filepath="$PROJECT_DIR$/study-sharding-sphere/study-sharding-sphere.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-xxl-job/study-xxl-job.iml" filepath="$PROJECT_DIR$/study-xxl-job/study-xxl-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" filepath="$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" />
