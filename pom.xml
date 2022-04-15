@@ -21,6 +21,7 @@
         <module>study-sharding-sphere</module>
         <module>study-elk</module>
         <module>study-rocketmq</module>
+        <module>study-kafka</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

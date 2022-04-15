@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/study-dubbo/dubbo-nacos-provider/dubbo-nacos-provider.iml" filepath="$PROJECT_DIR$/study-dubbo/dubbo-nacos-provider/dubbo-nacos-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-eureka/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/study-eureka/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-eureka/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/study-eureka/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-kafka/kafka-base/kafka-base.iml" filepath="$PROJECT_DIR$/study-kafka/kafka-base/kafka-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-kafka/kafka-consumer/kafka-consumer.iml" filepath="$PROJECT_DIR$/study-kafka/kafka-consumer/kafka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-kafka/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/study-kafka/kafka-producer/kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-config/nacos-config.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-config/nacos-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" />
@@ -22,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/study-exercise.iml" filepath="$PROJECT_DIR$/study-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-feign/study-feign.iml" filepath="$PROJECT_DIR$/study-feign/study-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-feign1/study-feign1.iml" filepath="$PROJECT_DIR$/study-feign1/study-feign1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-kafka/study-kafka.iml" filepath="$PROJECT_DIR$/study-kafka/study-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-mongodb/study-mongodb.iml" filepath="$PROJECT_DIR$/study-mongodb/study-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" filepath="$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" />

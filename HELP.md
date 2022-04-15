@@ -34,3 +34,7 @@ study-elk : 10010
 study-rocketmq:
     rocketmq-producer:10011
     rocket-consumer:10012
+    
+study-kafka:
+    kafka-producer:10013
+    kafka-consumer:10014
