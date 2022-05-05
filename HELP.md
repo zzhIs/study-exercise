@@ -38,3 +38,5 @@ study-rocketmq:
 study-kafka:
     kafka-producer:10013
     kafka-consumer:10014
+    
+study-sentinel:10015

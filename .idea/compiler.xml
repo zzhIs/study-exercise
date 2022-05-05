@@ -21,6 +21,7 @@
         <module name="nacos-provider" />
         <module name="rabbitmq-core" />
         <module name="rabbitmq-consumer" />
+        <module name="study-sentinel" />
         <module name="zookeeper-server" />
         <module name="dubbo-nacos-provider" />
         <module name="rocketmq-producer" />
@@ -66,6 +67,7 @@
       <module name="study-nacos" target="1.8" />
       <module name="study-rabbitmq" target="1.8" />
       <module name="study-rocketmq" target="1.8" />
+      <module name="study-sentinel" target="1.8" />
       <module name="study-sharding-sphere" target="1.8" />
       <module name="study-xxl-job" target="1.8" />
       <module name="study-zookeeper" target="1.8" />
@@ -103,6 +105,7 @@
       <module name="study-mongodb" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
       <module name="study-rabbitmq" options="-parameters" />
+      <module name="study-sentinel" options="-parameters" />
       <module name="study-sharding-sphere" options="-parameters" />
       <module name="study-xxl-job" options="-parameters" />
       <module name="study-zookeeper" options="-parameters" />

@@ -30,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" filepath="$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" filepath="$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-sentinel/study-sentinel.iml" filepath="$PROJECT_DIR$/study-sentinel/study-sentinel.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-sharding-sphere/study-sharding-sphere.iml" filepath="$PROJECT_DIR$/study-sharding-sphere/study-sharding-sphere.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-xxl-job/study-xxl-job.iml" filepath="$PROJECT_DIR$/study-xxl-job/study-xxl-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" filepath="$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" />

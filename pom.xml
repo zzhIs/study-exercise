@@ -22,6 +22,7 @@
         <module>study-elk</module>
         <module>study-rocketmq</module>
         <module>study-kafka</module>
+        <module>study-sentinel</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>
