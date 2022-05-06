@@ -34,6 +34,7 @@
         <module name="nacos-consumers" />
         <module name="eureka-client" />
         <module name="study-sharding-sphere" />
+        <module name="study-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -61,6 +62,7 @@
       <module name="study-exercise" target="1.8" />
       <module name="study-feign" target="1.8" />
       <module name="study-feign1" target="1.8" />
+      <module name="study-gateway" target="1.8" />
       <module name="study-java" target="1.8" />
       <module name="study-kafka" target="1.8" />
       <module name="study-mongodb" target="1.8" />
@@ -101,6 +103,7 @@
       <module name="study-exercise" options="-parameters" />
       <module name="study-feign" options="-parameters" />
       <module name="study-feign1" options="-parameters" />
+      <module name="study-gateway" options="-parameters" />
       <module name="study-java" options="-parameters" />
       <module name="study-mongodb" options="-parameters" />
       <module name="study-nacos" options="-parameters" />

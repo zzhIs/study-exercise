@@ -35,6 +35,7 @@
         <option value="$PROJECT_DIR$/study-kafka/kafka-producer/pom.xml" />
         <option value="$PROJECT_DIR$/study-kafka/kafka-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/study-sentinel/pom.xml" />
+        <option value="$PROJECT_DIR$/study-gateway/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

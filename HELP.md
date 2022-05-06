@@ -40,3 +40,5 @@ study-kafka:
     kafka-consumer:10014
     
 study-sentinel:10015
+
+study-gateway:10016

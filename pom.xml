@@ -23,6 +23,7 @@
         <module>study-rocketmq</module>
         <module>study-kafka</module>
         <module>study-sentinel</module>
+        <module>study-gateway</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

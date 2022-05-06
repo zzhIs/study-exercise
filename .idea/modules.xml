@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/study-exercise.iml" filepath="$PROJECT_DIR$/study-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-feign/study-feign.iml" filepath="$PROJECT_DIR$/study-feign/study-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-feign1/study-feign1.iml" filepath="$PROJECT_DIR$/study-feign1/study-feign1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-gateway/study-gateway.iml" filepath="$PROJECT_DIR$/study-gateway/study-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-kafka/study-kafka.iml" filepath="$PROJECT_DIR$/study-kafka/study-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-mongodb/study-mongodb.iml" filepath="$PROJECT_DIR$/study-mongodb/study-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
