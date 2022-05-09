@@ -58,7 +58,7 @@ import java.util.List;
  *     }
  * }
  */
-class Solution {
+class Solution123 {
     public List<Integer> postorderTraversal(TreeNode root) {
         return null;
     }

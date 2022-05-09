@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzh.dream.seatainventory.mapper.SeataInventoryMapper" >
+  <resultMap id="BaseResultMap" type="com.zzh.dream.seatainventory.entity.SeataInventory" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="goods_id" property="goodsId" jdbcType="VARCHAR" />
+    <result column="count" property="count" jdbcType="INTEGER" />
+    <result column="crt_name" property="crtName" jdbcType="VARCHAR" />
+    <result column="crt_time" property="crtTime" jdbcType="TIMESTAMP" />
+    <result column="upt_name" property="uptName" jdbcType="VARCHAR" />
+    <result column="upt_time" property="uptTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from seata_inventory
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zzh.dream.seatainventory.entity.SeataInventory" >
+    insert into seata_inventory (id, name, goods_id, 
+      count, crt_name, crt_time, 
+      upt_name, upt_time)
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{goodsId,jdbcType=VARCHAR}, 
+      #{count,jdbcType=INTEGER}, #{crtName,jdbcType=VARCHAR}, #{crtTime,jdbcType=TIMESTAMP}, 
+      #{uptName,jdbcType=VARCHAR}, #{uptTime,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zzh.dream.seatainventory.entity.SeataInventory" >
+    update seata_inventory
+    set name = #{name,jdbcType=VARCHAR},
+      goods_id = #{goodsId,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER},
+      crt_name = #{crtName,jdbcType=VARCHAR},
+      crt_time = #{crtTime,jdbcType=TIMESTAMP},
+      upt_name = #{uptName,jdbcType=VARCHAR},
+      upt_time = #{uptTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, name, goods_id, count, crt_name, crt_time, upt_name, upt_time
+    from seata_inventory
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, name, goods_id, count, crt_name, crt_time, upt_name, upt_time
+    from seata_inventory
+  </select>
+  <select id="selectByGoodsId" resultType="com.zzh.dream.seatainventory.entity.SeataInventory">
+        select id, name, goods_id, count, crt_name, crt_time, upt_name, upt_time
+      from seata_inventory
+      where goods_id = #{goodId,jdbcType=VARCHAR }
+  </select>
+</mapper>

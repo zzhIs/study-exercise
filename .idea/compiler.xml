@@ -16,9 +16,11 @@
         <module name="rabbitmq-producer" />
         <module name="eureka-server" />
         <module name="nacos-config" />
+        <module name="seata-bese" />
         <module name="dubbo-nacos-api" />
         <module name="kafka-base" />
         <module name="nacos-provider" />
+        <module name="seata-inventory" />
         <module name="rabbitmq-core" />
         <module name="rabbitmq-consumer" />
         <module name="study-sentinel" />
@@ -35,6 +37,7 @@
         <module name="eureka-client" />
         <module name="study-sharding-sphere" />
         <module name="study-gateway" />
+        <module name="seata-order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -55,6 +58,9 @@
       <module name="rabbitmq-producer" target="1.8" />
       <module name="rocket-consumer" target="1.8" />
       <module name="rocketmq-producer" target="1.8" />
+      <module name="seata-bese" target="1.8" />
+      <module name="seata-inventory" target="1.8" />
+      <module name="seata-order" target="1.8" />
       <module name="study-base" target="1.8" />
       <module name="study-dubbo" target="1.8" />
       <module name="study-elk" target="1.8" />
@@ -69,6 +75,7 @@
       <module name="study-nacos" target="1.8" />
       <module name="study-rabbitmq" target="1.8" />
       <module name="study-rocketmq" target="1.8" />
+      <module name="study-seata" target="1.8" />
       <module name="study-sentinel" target="1.8" />
       <module name="study-sharding-sphere" target="1.8" />
       <module name="study-xxl-job" target="1.8" />
@@ -96,6 +103,9 @@
       <module name="rabbitmq-producer" options="-parameters" />
       <module name="rocket-consumer" options="-parameters" />
       <module name="rocketmq-producer" options="-parameters" />
+      <module name="seata-bese" options="-parameters" />
+      <module name="seata-inventory" options="-parameters" />
+      <module name="seata-order" options="-parameters" />
       <module name="study-base" options="-parameters" />
       <module name="study-dubbo" options="-parameters" />
       <module name="study-elk" options="-parameters" />
@@ -108,6 +118,7 @@
       <module name="study-mongodb" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
       <module name="study-rabbitmq" options="-parameters" />
+      <module name="study-seata" options="-parameters" />
       <module name="study-sentinel" options="-parameters" />
       <module name="study-sharding-sphere" options="-parameters" />
       <module name="study-xxl-job" options="-parameters" />

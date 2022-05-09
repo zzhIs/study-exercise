@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzh.dream.seataorder.mapper.SeataOrderMapper" >
+  <resultMap id="BaseResultMap" type="com.zzh.dream.seataorder.entity.SeataOrder" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="order_name" property="orderName" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="crt_time" property="crtTime" jdbcType="TIMESTAMP" />
+    <result column="goods_id" property="goodsId" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from seata_order
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zzh.dream.seataorder.entity.SeataOrder" >
+    insert into seata_order (id, order_name, status, 
+      crt_time,goods_id)
+    values (#{id,jdbcType=VARCHAR}, #{orderName,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, 
+      #{crtTime,jdbcType=TIMESTAMP},#{goodsId,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zzh.dream.seataorder.entity.SeataOrder" >
+    update seata_order
+    set order_name = #{orderName,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      crt_time = #{crtTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, order_name, status, crt_time
+    from seata_order
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, order_name, status, crt_time
+    from seata_order
+  </select>
+</mapper>

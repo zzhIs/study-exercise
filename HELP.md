@@ -42,3 +42,7 @@ study-kafka:
 study-sentinel:10015
 
 study-gateway:10016
+
+study-seata:
+    seata-order:10017
+    seata-inventory:10018

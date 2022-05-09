@@ -1,0 +1,38 @@
+create table seata_inventory
+(
+	id varchar(36) not null,
+	name varchar(64) null comment '库存商品名称',
+	goods_id varchar(36) null comment '商品id',
+	count int default 0 null comment '库存数量',
+	crt_name varchar(36) null,
+	crt_time timestamp null,
+	upt_name varchar(36) null,
+	upt_time timestamp null
+)
+comment '分布式事务库存表';
+
+create unique index seata_inventory_id_uindex
+	on seata_inventory (id);
+
+alter table seata_inventory
+	add constraint seata_inventory_pk
+		primary key (id);
+
+
+
+
+
+
+
+create table seata_order
+(
+	id varchar(36) not null,
+	order_name varchar(36) null comment '名称',
+	status varchar(4) default '0' null comment '状态 0 未完成，1已完成',
+	crt_time timestamp null comment '创建时间'
+)
+comment '分布式事务订单表';
+
+create unique index seata_order_id_uindex on seata_order (id);
+alter table seata_order add constraint seata_order_pk primary key (id);
+alter table seata_order add goods_id varchar(36) null comment '商品id';
