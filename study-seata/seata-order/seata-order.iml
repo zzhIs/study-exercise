@@ -178,5 +178,7 @@
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.16" level="project" />
     <orderEntry type="module" module-name="seata-bese" />
+    <orderEntry type="library" name="Maven: org.apache.skywalking:apm-toolkit-trace:8.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.skywalking:apm-toolkit-logback-1.x:8.4.0" level="project" />
   </component>
 </module>

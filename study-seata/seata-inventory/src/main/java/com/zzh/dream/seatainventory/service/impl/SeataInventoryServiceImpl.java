@@ -3,6 +3,9 @@ package com.zzh.dream.seatainventory.service.impl;
 import com.zzh.dream.seatainventory.entity.SeataInventory;
 import com.zzh.dream.seatainventory.mapper.SeataInventoryMapper;
 import com.zzh.dream.seatainventory.service.SeataInventoryService;
+import org.apache.skywalking.apm.toolkit.trace.Tag;
+import org.apache.skywalking.apm.toolkit.trace.Tags;
+import org.apache.skywalking.apm.toolkit.trace.Trace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +21,9 @@ public class SeataInventoryServiceImpl implements SeataInventoryService {
 
     @Autowired
     private SeataInventoryMapper seataInventoryMapper;
+
+    @Trace
+    @Tags({@Tag(key = "param", value = "arg[0]")})
     @Override
     public void countDownInventory(String goodsId) throws Exception {
         SeataInventory seataInventory = selectByGoodsId(goodsId);

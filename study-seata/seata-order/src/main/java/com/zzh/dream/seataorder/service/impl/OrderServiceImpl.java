@@ -8,6 +8,9 @@ import com.zzh.dream.seataorder.service.OrderService;
 import io.seata.core.context.RootContext;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.skywalking.apm.toolkit.trace.Tag;
+import org.apache.skywalking.apm.toolkit.trace.Tags;
+import org.apache.skywalking.apm.toolkit.trace.Trace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +31,14 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private SeataInventoryFeignService seataInventoryFeignService;
 
+    /**
+     * @Trace将方法加入追踪链路
+     *  加入@Tags或@Tag记录参数和返回信息等
+     * @param goodsIds
+     * @throws Exception
+     */
+    @Trace
+    @Tag(key = "param",value = "arg[0]")
     @Override
     @GlobalTransactional(name = "createOrder")
     public void saveOrder(String goodsIds) throws Exception {

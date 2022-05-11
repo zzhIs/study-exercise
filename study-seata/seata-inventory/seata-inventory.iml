@@ -175,8 +175,10 @@
     <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:2.0.3" level="project" />
-    <orderEntry type="module" module-name="seata-bese" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.12" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.16" level="project" />
+    <orderEntry type="module" module-name="seata-bese" />
+    <orderEntry type="library" name="Maven: org.apache.skywalking:apm-toolkit-trace:8.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.skywalking:apm-toolkit-logback-1.x:8.4.0" level="project" />
   </component>
 </module>
