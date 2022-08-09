@@ -24,6 +24,7 @@
         <module>study-kafka</module>
         <module>study-sentinel</module>
         <module>study-gateway</module>
+        <module>study-oauth2</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

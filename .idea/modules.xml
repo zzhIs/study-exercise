@@ -14,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-config/nacos-config.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-config/nacos-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-consumers/nacos-consumers.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" filepath="$PROJECT_DIR$/study-nacos/nacos-provider/nacos-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-oauth2/oauth2-base/oauth2-base.iml" filepath="$PROJECT_DIR$/study-oauth2/oauth2-base/oauth2-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-oauth2/oauth2-jwt/oauth2-jwt.iml" filepath="$PROJECT_DIR$/study-oauth2/oauth2-jwt/oauth2-jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-oauth2/oauth2-sso/oauth2-sso.iml" filepath="$PROJECT_DIR$/study-oauth2/oauth2-sso/oauth2-sso.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-consumer/rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/study-rabbitmq/rabbitmq-consumer/rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-core/rabbitmq-core.iml" filepath="$PROJECT_DIR$/study-rabbitmq/rabbitmq-core/rabbitmq-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/rabbitmq-producer/rabbitmq-producer.iml" filepath="$PROJECT_DIR$/study-rabbitmq/rabbitmq-producer/rabbitmq-producer.iml" />
@@ -32,6 +35,7 @@
       <module fileurl="file://$PROJECT_DIR$/study-kafka/study-kafka.iml" filepath="$PROJECT_DIR$/study-kafka/study-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-mongodb/study-mongodb.iml" filepath="$PROJECT_DIR$/study-mongodb/study-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-oauth2/study-oauth2.iml" filepath="$PROJECT_DIR$/study-oauth2/study-oauth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" filepath="$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" filepath="$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-seata/study-seata.iml" filepath="$PROJECT_DIR$/study-seata/study-seata.iml" />

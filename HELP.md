@@ -46,3 +46,7 @@ study-gateway:10016
 study-seata:
     seata-order:10017
     seata-inventory:10018
+    
+study-oauth2 : 
+    oauth2-base:10019
+    oauth2-jwt:10020

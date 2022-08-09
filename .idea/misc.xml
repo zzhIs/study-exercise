@@ -40,6 +40,10 @@
         <option value="$PROJECT_DIR$/study-seata/seata-order/pom.xml" />
         <option value="$PROJECT_DIR$/study-seata/seata-inventory/pom.xml" />
         <option value="$PROJECT_DIR$/study-seata/seata-bese/pom.xml" />
+        <option value="$PROJECT_DIR$/study-oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/study-oauth2/oauth2-base/pom.xml" />
+        <option value="$PROJECT_DIR$/study-oauth2/oauth2-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/study-oauth2/oauth2-sso/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -23,7 +23,7 @@ public class BistouryBiz implements InitializingBean {
                 log.info("线程执行中...." + dateUtil.toString());
             }).start();
 
-            Thread.sleep(1000L);
+            Thread.sleep(10000L);
         }
 
     }

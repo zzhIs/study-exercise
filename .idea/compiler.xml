@@ -25,10 +25,13 @@
         <module name="rabbitmq-consumer" />
         <module name="study-sentinel" />
         <module name="zookeeper-server" />
+        <module name="oauth2-jwt" />
         <module name="dubbo-nacos-provider" />
         <module name="rocketmq-producer" />
         <module name="kafka-producer" />
+        <module name="oauth2-sso" />
         <module name="nacos-feign" />
+        <module name="oauth2-base" />
         <module name="study-base" />
         <module name="study-xxl-job" />
         <module name="dubbo-nacos-consumers" />
@@ -53,6 +56,9 @@
       <module name="nacos-consumers" target="1.8" />
       <module name="nacos-feign" target="1.8" />
       <module name="nacos-provider" target="1.8" />
+      <module name="oauth2-base" target="1.8" />
+      <module name="oauth2-jwt" target="1.8" />
+      <module name="oauth2-sso" target="1.8" />
       <module name="rabbitmq-consumer" target="1.8" />
       <module name="rabbitmq-core" target="1.8" />
       <module name="rabbitmq-producer" target="1.8" />
@@ -73,6 +79,7 @@
       <module name="study-kafka" target="1.8" />
       <module name="study-mongodb" target="1.8" />
       <module name="study-nacos" target="1.8" />
+      <module name="study-oauth2" target="1.8" />
       <module name="study-rabbitmq" target="1.8" />
       <module name="study-rocketmq" target="1.8" />
       <module name="study-seata" target="1.8" />
@@ -98,6 +105,9 @@
       <module name="nacos-consumers" options="-parameters" />
       <module name="nacos-feign" options="-parameters" />
       <module name="nacos-provider" options="-parameters" />
+      <module name="oauth2-base" options="-parameters" />
+      <module name="oauth2-jwt" options="-parameters" />
+      <module name="oauth2-sso" options="-parameters" />
       <module name="rabbitmq-consumer" options="-parameters" />
       <module name="rabbitmq-core" options="-parameters" />
       <module name="rabbitmq-producer" options="-parameters" />
@@ -117,6 +127,7 @@
       <module name="study-java" options="-parameters" />
       <module name="study-mongodb" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
+      <module name="study-oauth2" options="-parameters" />
       <module name="study-rabbitmq" options="-parameters" />
       <module name="study-seata" options="-parameters" />
       <module name="study-sentinel" options="-parameters" />
