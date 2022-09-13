@@ -13,4 +13,6 @@ public interface UserMapper {
     User selectById(@Param("id") Integer id);
 
     void insert(@Param("user") User user);
+
+    User getUserDetailById(@Param("id")Integer id);
 }

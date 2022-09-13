@@ -26,6 +26,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User getUserDetailById(Integer id) {
+        return userMapper.getUserDetailById(id);
+    }
+
+    @Override
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void insert(User user) {
         userMapper.insert(user);

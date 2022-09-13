@@ -1,6 +1,7 @@
 package com.zzh.dream.study.base.service;
 
 import com.zzh.dream.study.base.entity.User;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @description: TODO 类描述
@@ -12,4 +13,6 @@ public interface UserService {
     User selectById(Integer id);
 
     void insert(User user);
+
+    User getUserDetailById(@Param("id") Integer id);
 }

@@ -17,14 +17,14 @@ public class BistouryBiz implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         log.info("BistouryBiz.afterPropertiesSet方法执行了...");
-        while (count-- > 0) {
-            new Thread(() -> {
-                DateUtil dateUtil = new DateUtil();
-                log.info("线程执行中...." + dateUtil.toString());
-            }).start();
-
-            Thread.sleep(10000L);
-        }
+//        while (count-- > 0) {
+//            new Thread(() -> {
+//                DateUtil dateUtil = new DateUtil();
+//                log.info("线程执行中...." + dateUtil.toString());
+//            }).start();
+//
+//            Thread.sleep(10000L);
+//        }
 
     }
 
