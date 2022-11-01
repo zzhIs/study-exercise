@@ -12,6 +12,8 @@ public interface UserService {
 
     User selectById(Integer id);
 
+    User selectOne(Integer id);
+
     void insert(User user);
 
     User getUserDetailById(@Param("id") Integer id);

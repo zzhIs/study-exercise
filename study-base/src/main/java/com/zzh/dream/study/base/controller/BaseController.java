@@ -30,6 +30,11 @@ public class BaseController {
         return userService.getUserDetailById(id);
     }
 
+    @GetMapping("/user_one/{id}")
+    public User selectOne(@PathVariable("id")Integer id){
+        return userService.selectOne(id);
+    }
+
     @PostMapping("/user/insert")
     public String insert(){
         userInsertBiz.insert();

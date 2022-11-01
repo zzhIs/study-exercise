@@ -35,4 +35,10 @@ public class UserServiceImpl implements UserService {
     public void insert(User user) {
         userMapper.insert(user);
     }
+
+
+    @Override
+    public User selectOne(Integer id){
+        return userMapper.selectOne(new User().setId(id));
+    }
 }

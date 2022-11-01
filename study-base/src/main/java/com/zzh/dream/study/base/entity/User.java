@@ -4,6 +4,7 @@ package com.zzh.dream.study.base.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 import javax.persistence.Transient;
 import java.util.Date;
@@ -15,6 +16,7 @@ import java.util.List;
  * @date: 26/08/2021
  **/
 @Data
+@Accessors(chain = true)
 public class User {
     private Integer id;
     private String userName;
