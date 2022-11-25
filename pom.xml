@@ -25,6 +25,7 @@
         <module>study-sentinel</module>
         <module>study-gateway</module>
         <module>study-oauth2</module>
+        <module>study-seata</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>
