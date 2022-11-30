@@ -1,0 +1,15 @@
+server:
+  port: 20001
+  servlet:
+    context-path: /goods
+
+spring:
+  application:
+    name: zzh-cloud-goods
+  #配置nacos注册中心的地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+

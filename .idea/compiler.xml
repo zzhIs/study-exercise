@@ -14,8 +14,10 @@
         <module name="kafka-consumer" />
         <module name="study-feign1" />
         <module name="rabbitmq-producer" />
+        <module name="zzh-cloud-goods" />
         <module name="eureka-server" />
         <module name="nacos-config" />
+        <module name="zzh-cloud-order" />
         <module name="seata-bese" />
         <module name="dubbo-nacos-api" />
         <module name="kafka-base" />
@@ -40,7 +42,10 @@
         <module name="eureka-client" />
         <module name="study-sharding-sphere" />
         <module name="study-gateway" />
+        <module name="study-xxl-job (1)" />
+        <module name="zzh-cloud-common" />
         <module name="seata-order" />
+        <module name="zzh-cloud-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -86,9 +91,15 @@
       <module name="study-sentinel" target="1.8" />
       <module name="study-sharding-sphere" target="1.8" />
       <module name="study-xxl-job" target="1.8" />
+      <module name="study-xxl-job (1)" target="1.5" />
       <module name="study-zookeeper" target="1.8" />
       <module name="zookeeper-clinet" target="1.8" />
       <module name="zookeeper-server" target="1.8" />
+      <module name="zzh-cloud-all" target="1.8" />
+      <module name="zzh-cloud-common" target="1.8" />
+      <module name="zzh-cloud-gateway" target="1.8" />
+      <module name="zzh-cloud-goods" target="1.8" />
+      <module name="zzh-cloud-order" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -133,9 +144,15 @@
       <module name="study-sentinel" options="-parameters" />
       <module name="study-sharding-sphere" options="-parameters" />
       <module name="study-xxl-job" options="-parameters" />
+      <module name="study-xxl-job (1)" options="" />
       <module name="study-zookeeper" options="-parameters" />
       <module name="zookeeper-clinet" options="-parameters" />
       <module name="zookeeper-server" options="-parameters" />
+      <module name="zzh-cloud-all" options="-parameters" />
+      <module name="zzh-cloud-common" options="-parameters" />
+      <module name="zzh-cloud-gateway" options="-parameters" />
+      <module name="zzh-cloud-goods" options="-parameters" />
+      <module name="zzh-cloud-order" options="-parameters" />
     </option>
   </component>
 </project>

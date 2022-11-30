@@ -45,6 +45,11 @@
       <module fileurl="file://$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" filepath="$PROJECT_DIR$/study-zookeeper/study-zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/zookeeper-clinet.iml" filepath="$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/zookeeper-clinet.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-zookeeper/zookeeper-server/zookeeper-server.iml" filepath="$PROJECT_DIR$/study-zookeeper/zookeeper-server/zookeeper-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-all.iml" filepath="$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-common/zzh-cloud-common.iml" filepath="$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-common/zzh-cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-gateway/zzh-cloud-gateway.iml" filepath="$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-gateway/zzh-cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-goods/zzh-cloud-goods.iml" filepath="$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-goods/zzh-cloud-goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-order/zzh-cloud-order.iml" filepath="$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-order/zzh-cloud-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/zzh-spring/zzh-spring.iml" filepath="$PROJECT_DIR$/zzh-spring/zzh-spring.iml" />
     </modules>
   </component>

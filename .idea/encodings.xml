@@ -31,5 +31,9 @@
     <file url="file://$PROJECT_DIR$/study-sharding-sphere/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-xxl-job/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-zookeeper/zookeeper-clinet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-goods/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zzh-cloud-all/zzh-cloud-order/src/main/java" charset="UTF-8" />
   </component>
 </project>

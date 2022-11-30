@@ -1,0 +1,41 @@
+server:
+  port: 20000
+
+spring:
+  application:
+    name: zzh-cloud-gateway
+  #配置nacos注册中心的地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+    gateway:
+      discovery:
+              locator:
+                enabled: true #默认为false 设置true可以通过开启微服务创建路由功能，即可以通过微服务名称访问服务
+              enabled: true #是否开启网关功能
+      routes:
+        - id: zzh_cloud_goods_route  #路由ID，全局唯一
+          uri: http://127.0.0.1:20001  #目标微服务的请求地址和端口
+          predicates:
+            # 请求路径路由匹配
+            - Path=/goods/**
+        - id: zzh_cloud_order_route  #路由ID，全局唯一
+          uri: http://127.0.0.1:20002  #目标微服务的请求地址和端口
+          predicates:
+            # 请求路径路由匹配
+            - Path=/order/**
+        - id: zzh_cloud_gateway_route  #路由ID，全局唯一
+          uri: http://127.0.0.1:20000  #目标微服务的请求地址和端口
+          predicates:
+            # 请求路径路由匹配
+            - Path=/gateway/**
+
+      #跨域配置
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+
+
