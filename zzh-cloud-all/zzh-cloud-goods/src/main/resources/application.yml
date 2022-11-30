@@ -1,7 +1,7 @@
 server:
   port: 20001
   servlet:
-    context-path: /goods
+    context-path: /zzh-goods
 
 spring:
   application:
@@ -11,5 +11,26 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+
+  #集成Mybatis
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/zzh_test?characterEncoding=utf-8&useSSL=true
+    username: root
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:mapper/**/*.xml
+  basePackage: com.zzh.dream.seataorder.mapper
+
+
+logging:
+  level:
+    root: info
+
+
+
+
 
 

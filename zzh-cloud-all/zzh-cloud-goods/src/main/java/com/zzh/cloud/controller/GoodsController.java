@@ -1,9 +1,10 @@
 package com.zzh.cloud.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.zzh.cloud.entity.ZzhGoods;
+import com.zzh.cloud.exception.CommonResult;
+import com.zzh.cloud.service.ZzhGoodsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @description: 基础控制器
@@ -11,12 +12,21 @@ import org.springframework.web.bind.annotation.RestController;
  * @date: 26/08/2021
  **/
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/goods")
 public class GoodsController {
+    @Autowired
+    private ZzhGoodsService goodsService;
 
-    @GetMapping("")
-    public String insert(){
-        System.out.println("查询成功...");
-        return "success";
+    @GetMapping("/{id}")
+    public CommonResult insert(@PathVariable("id")String id) {
+
+        return CommonResult.success(goodsService.selectById(id));
+    }
+
+    @PutMapping("/{id}")
+    public CommonResult insert(@PathVariable("id")String id,
+                         @RequestParam("num")Integer num) throws Exception {
+        goodsService.countDownInventory(id,num);
+        return CommonResult.success("success");
     }
 }
