@@ -3,12 +3,13 @@ package com.zzh.cloud.entity;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
 @Data
 @Accessors(chain = true)
-public class ZzhGoods {
+public class ZzhGoods implements Serializable {
     private String id;
 
     private String goodsName;

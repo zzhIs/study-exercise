@@ -66,6 +66,14 @@
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
 		</dependency>
+
+
+		<!--		集成redis-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>com.zzh.cloud</groupId>
 			<artifactId>zzh-cloud-common</artifactId>
