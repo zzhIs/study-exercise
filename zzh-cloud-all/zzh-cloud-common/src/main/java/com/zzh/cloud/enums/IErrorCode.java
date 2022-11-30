@@ -1,4 +1,4 @@
-package com.zzh.cloud.exception;
+package com.zzh.cloud.enums;
 
 
 public interface IErrorCode {

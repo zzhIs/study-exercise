@@ -1,7 +1,6 @@
 package com.zzh.cloud.controller;
 
-import com.zzh.cloud.entity.ZzhGoods;
-import com.zzh.cloud.exception.CommonResult;
+import com.zzh.cloud.result.CommonResult;
 import com.zzh.cloud.service.ZzhGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

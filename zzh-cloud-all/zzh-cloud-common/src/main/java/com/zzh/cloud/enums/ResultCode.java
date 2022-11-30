@@ -1,6 +1,7 @@
-package com.zzh.cloud.exception;
+package com.zzh.cloud.enums;
 
 
+import com.zzh.cloud.enums.IErrorCode;
 
 public enum ResultCode implements IErrorCode {
     SUCCESS(200, "操作成功"),

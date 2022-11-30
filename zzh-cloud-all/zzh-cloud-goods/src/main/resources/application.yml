@@ -28,6 +28,11 @@ mybatis:
 logging:
   level:
     root: info
+    org:
+      springframework:
+        core: info
+        web: info
+      mybatis: info
 
 
 

@@ -1,5 +1,7 @@
-package com.zzh.cloud.exception;
+package com.zzh.cloud.result;
 
+import com.zzh.cloud.enums.IErrorCode;
+import com.zzh.cloud.enums.ResultCode;
 
 public class CommonResult<T> {
     private long code;

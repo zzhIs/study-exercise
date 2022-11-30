@@ -1,5 +1,6 @@
-package com.zzh.cloud.exception;
+package com.zzh.cloud.handler;
 
+import com.zzh.cloud.result.CommonResult;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
