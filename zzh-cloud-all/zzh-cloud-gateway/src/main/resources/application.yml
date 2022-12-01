@@ -20,12 +20,12 @@ spring:
           uri: http://127.0.0.1:20001  #目标微服务的请求地址和端口
           predicates:
             # 请求路径路由匹配
-            - Path=/goods/**
+            - Path=/**/goods/**
         - id: zzh_cloud_order_route  #路由ID，全局唯一
           uri: http://127.0.0.1:20002  #目标微服务的请求地址和端口
           predicates:
             # 请求路径路由匹配
-            - Path=/order/**
+            - Path=/**/order/**
         - id: zzh_cloud_gateway_route  #路由ID，全局唯一
           uri: http://127.0.0.1:20000  #目标微服务的请求地址和端口
           predicates:
