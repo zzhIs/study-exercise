@@ -1,6 +1,6 @@
-package com.zzh.cloud.feign.order;
+package com.zzh.cloud.feign.interf.order;
 
-import com.zzh.cloud.configuration.FeignConfiguration;
+import com.zzh.cloud.feign.conf.FeignConfiguration;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

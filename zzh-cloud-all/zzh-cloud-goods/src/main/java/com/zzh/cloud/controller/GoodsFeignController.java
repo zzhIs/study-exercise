@@ -1,8 +1,7 @@
 package com.zzh.cloud.controller;
 
-import com.zzh.cloud.feign.gateway.ZzhGatewayServiceFeign;
+import com.zzh.cloud.feign.interf.gateway.GatewayServiceFeign;
 import com.zzh.cloud.result.CommonResult;
-import com.zzh.cloud.service.ZzhGoodsService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/goods")
 public class GoodsFeignController {
     @Autowired
-    private ZzhGatewayServiceFeign gatewayServiceFeign;
+    private GatewayServiceFeign gatewayServiceFeign;
 
 
     /**

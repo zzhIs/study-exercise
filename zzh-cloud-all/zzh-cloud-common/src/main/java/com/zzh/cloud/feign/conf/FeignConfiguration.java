@@ -1,9 +1,8 @@
-package com.zzh.cloud.configuration;
+package com.zzh.cloud.feign.conf;
 
-import com.zzh.cloud.configuration.interceptor.FeignAuthRequestInterceptor;
+import com.zzh.cloud.feign.interceptor.ZzhFeignAuthRequestInterceptor;
 import feign.Logger;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -37,8 +36,8 @@ public class FeignConfiguration {
      * @return
      */
     @Bean
-    public FeignAuthRequestInterceptor feignAuthRequestInterceptor() {
-        return new FeignAuthRequestInterceptor();
+    public ZzhFeignAuthRequestInterceptor zzhFeignAuthRequestInterceptor(){
+        return new ZzhFeignAuthRequestInterceptor();
     }
 
 

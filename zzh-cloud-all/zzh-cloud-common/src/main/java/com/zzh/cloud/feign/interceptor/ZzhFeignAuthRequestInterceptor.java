@@ -1,4 +1,4 @@
-package com.zzh.cloud.configuration.interceptor;
+package com.zzh.cloud.feign.interceptor;
 
 import feign.Request;
 import feign.RequestInterceptor;
@@ -11,7 +11,7 @@ import java.util.Collection;
  * @author: zhangzihao
  * @date: 28/08/2021
  **/
-public class FeignAuthRequestInterceptor implements RequestInterceptor {
+public class ZzhFeignAuthRequestInterceptor implements RequestInterceptor {
     @Override
     public void apply(RequestTemplate requestTemplate){
         System.out.println("我是自定义拦截器FeignAuthRequestInterceptor，我执行...");

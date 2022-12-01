@@ -1,6 +1,6 @@
-package com.zzh.cloud.feign.gateway;
+package com.zzh.cloud.feign.interf.gateway;
 
-import com.zzh.cloud.configuration.FeignConfiguration;
+import com.zzh.cloud.feign.conf.FeignConfiguration;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @date: 01/12/2022
  **/
 @FeignClient(value = "zzh-cloud-gateway",path = "/gateway",configuration = FeignConfiguration.class)
-public interface ZzhGatewayServiceFeign {
+public interface GatewayServiceFeign {
 
     @GetMapping("/user/{id}")
     String select(@PathVariable("id") String id);
