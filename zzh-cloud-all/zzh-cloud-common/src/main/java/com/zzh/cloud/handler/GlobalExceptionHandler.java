@@ -13,8 +13,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(value =Exception.class)
+
     @ResponseBody
+    @ExceptionHandler(value =Exception.class)
     public CommonResult exceptionHandler(Exception e){
         e.printStackTrace();
         return CommonResult.failed(e.getMessage());

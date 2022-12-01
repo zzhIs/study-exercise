@@ -17,5 +17,13 @@ public interface ZzhGoodsService {
      * @param id
      * @param num
      */
-    void countDownInventory(String id, Integer num) throws Exception;
+    void countDownInventory(String id, Integer num);
+
+    /**
+     * 分布式事务的扣减库存
+     *
+     * @param id
+     * @param num
+     */
+    void seataCountDownInventory(String id, Integer num);
 }
