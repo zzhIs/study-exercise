@@ -1,8 +1,6 @@
 package com.zzh.cloud;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @description: 基础控制器
@@ -13,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/gateway")
 public class BaseController {
 
-    @PostMapping("/user")
-    public String insert(){
+    @GetMapping("/user/{id}")
+    public String select(@PathVariable("id")String id){
         System.out.println("查询成功...");
-        return "success";
+        return "success"+id;
     }
 }
