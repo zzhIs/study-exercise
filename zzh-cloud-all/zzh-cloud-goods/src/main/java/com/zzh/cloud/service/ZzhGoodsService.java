@@ -1,7 +1,6 @@
 package com.zzh.cloud.service;
 
 import com.zzh.cloud.entity.ZzhGoods;
-import com.zzh.cloud.exception.BaseException;
 
 /**
  * @description: TODO 类描述

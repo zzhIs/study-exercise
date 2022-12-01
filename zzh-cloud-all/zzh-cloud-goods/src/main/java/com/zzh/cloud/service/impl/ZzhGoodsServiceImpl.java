@@ -5,6 +5,10 @@ import com.zzh.cloud.entity.ZzhGoods;
 import com.zzh.cloud.exception.BaseException;
 import com.zzh.cloud.mapper.ZzhGoodsMapper;
 import com.zzh.cloud.service.ZzhGoodsService;
+import org.apache.commons.lang.StringUtils;
+import org.apache.skywalking.apm.toolkit.trace.Tag;
+import org.apache.skywalking.apm.toolkit.trace.Tags;
+import org.apache.skywalking.apm.toolkit.trace.Trace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,8 +23,14 @@ public class ZzhGoodsServiceImpl implements ZzhGoodsService {
     @Autowired
     private ZzhGoodsMapper goodsMapper;
 
+    @Trace
+    @Tags({@Tag(key = "param", value = "arg[0]"),
+            @Tag(key = "result", value = "returnedObj")})
     @Override
     public ZzhGoods selectById(String id) {
+        if (StringUtils.equals(id,"2")){
+            throw new BaseException("id不能等于2...");
+        }
         return goodsMapper.selectByPrimaryKey(id);
     }
 
