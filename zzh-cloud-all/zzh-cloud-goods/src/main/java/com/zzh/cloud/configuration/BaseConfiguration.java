@@ -1,6 +1,7 @@
 package com.zzh.cloud.configuration;
 
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -17,4 +18,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class BaseConfiguration {
 
 
+    @Bean
+    public UserConfigInfo userConfigInfo(){
+        return new UserConfigInfo();
+    }
 }

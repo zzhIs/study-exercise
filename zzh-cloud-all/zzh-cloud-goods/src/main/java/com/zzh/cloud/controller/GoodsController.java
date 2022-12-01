@@ -1,6 +1,7 @@
 package com.zzh.cloud.controller;
 
 import cn.hutool.core.util.ObjectUtil;
+import com.zzh.cloud.configuration.UserConfigInfo;
 import com.zzh.cloud.entity.ZzhGoods;
 import com.zzh.cloud.result.CommonResult;
 import com.zzh.cloud.service.ZzhGoodsService;
@@ -26,6 +27,9 @@ public class GoodsController {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @Autowired
+    private UserConfigInfo user;
 
 
     @GetMapping("/{id}")
@@ -56,5 +60,11 @@ public class GoodsController {
             }
         }
         return CommonResult.success(goods);
+    }
+
+
+    @PutMapping("/user")
+    public CommonResult selectUserInfo(){
+        return CommonResult.success(String.format("姓名：%s,年龄：%s",user.getName(),user.getAge()));
     }
 }
