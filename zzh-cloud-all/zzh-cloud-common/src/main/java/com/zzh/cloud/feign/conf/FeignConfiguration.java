@@ -40,16 +40,4 @@ public class FeignConfiguration {
         return new ZzhFeignAuthRequestInterceptor();
     }
 
-
-    /**
-     * 整合feign没有此配置会报异常
-     * 【Java异常】com.netflix.client.ClientException: Load balancer does not have available server for client
-     *  使用ribbon作为负载均衡   #nacos-discovery中默认引入了ribbon
-     * @return
-     */
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
 }

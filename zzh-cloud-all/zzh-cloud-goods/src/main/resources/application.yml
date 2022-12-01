@@ -15,7 +15,16 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
 
-#redis配置
+    # 添加sentinel的控制台地址 指定应用与Sentinel控制台交互的端口，应用本地会起一个该端口占用的HttpServer port: 8719
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
+        #应用本地会起一个该端口占用的HttpServer port: 8719
+        port: 8719
+      #启动立即加载初始化, 而不是有流量之后再和控制台交互
+      eager: true
+
+  #redis配置
   redis:
     host: localhost
     password:
@@ -45,6 +54,17 @@ logging:
         web: info
       mybatis: info
 
+#sentinel暴露actuator端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#开启sentinel对feign的支持
+feign:
+  sentinel:
+    enabled: true
 
 
 
