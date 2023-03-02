@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzh.cloud.mapper.ZzhGoodsMapper">
+  <resultMap id="BaseResultMap" type="com.zzh.cloud.entity.ZzhGoods">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+    <result column="goods_num" jdbcType="VARCHAR" property="goodsNum" />
+    <result column="goods_color" jdbcType="VARCHAR" property="goodsColor" />
+    <result column="count" jdbcType="INTEGER" property="count" />
+    <result column="crt_name" jdbcType="VARCHAR" property="crtName" />
+    <result column="crt_time" jdbcType="TIMESTAMP" property="crtTime" />
+    <result column="upt_name" jdbcType="VARCHAR" property="uptName" />
+    <result column="upt_time" jdbcType="TIMESTAMP" property="uptTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from zzh_goods
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zzh.cloud.entity.ZzhGoods">
+    insert into zzh_goods (id, goods_name, goods_num, 
+      goods_color, count, crt_name, 
+      crt_time, upt_name, upt_time
+      )
+    values (#{id,jdbcType=VARCHAR}, #{goodsName,jdbcType=VARCHAR}, #{goodsNum,jdbcType=VARCHAR}, 
+      #{goodsColor,jdbcType=VARCHAR}, #{count,jdbcType=INTEGER}, #{crtName,jdbcType=VARCHAR}, 
+      #{crtTime,jdbcType=TIMESTAMP}, #{uptName,jdbcType=VARCHAR}, #{uptTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zzh.cloud.entity.ZzhGoods">
+    update zzh_goods
+    set goods_name = #{goodsName,jdbcType=VARCHAR},
+      goods_num = #{goodsNum,jdbcType=VARCHAR},
+      goods_color = #{goodsColor,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER},
+      crt_name = #{crtName,jdbcType=VARCHAR},
+      crt_time = #{crtTime,jdbcType=TIMESTAMP},
+      upt_name = #{uptName,jdbcType=VARCHAR},
+      upt_time = #{uptTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, goods_name, goods_num, goods_color, count, crt_name, crt_time, upt_name, 
+    upt_time
+    from zzh_goods
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, goods_name, goods_num, goods_color, count, crt_name, crt_time, upt_name, 
+    upt_time
+    from zzh_goods
+  </select>
+
+</mapper>
