@@ -26,6 +26,7 @@
         <module>study-gateway</module>
         <module>study-oauth2</module>
         <module>study-seata</module>
+        <module>study-ocr1</module>
     </modules>
 
     <groupId>com.zzh.dream</groupId>

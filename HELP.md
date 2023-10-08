@@ -50,3 +50,5 @@ study-seata:
 study-oauth2 : 
     oauth2-base:10019
     oauth2-jwt:10020
+    
+study-ocr1 ：10021

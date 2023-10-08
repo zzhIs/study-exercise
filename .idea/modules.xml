@@ -36,7 +36,10 @@
       <module fileurl="file://$PROJECT_DIR$/study-mongodb/study-mongodb.iml" filepath="$PROJECT_DIR$/study-mongodb/study-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-nacos/study-nacos.iml" filepath="$PROJECT_DIR$/study-nacos/study-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-oauth2/study-oauth2.iml" filepath="$PROJECT_DIR$/study-oauth2/study-oauth2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-ocr/study-ocr.iml" filepath="$PROJECT_DIR$/study-ocr/study-ocr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-ocr1/study-ocr1.iml" filepath="$PROJECT_DIR$/study-ocr1/study-ocr1.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" filepath="$PROJECT_DIR$/study-rabbitmq/study-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-ocr/src/study-rabbitmq (1).iml" filepath="$PROJECT_DIR$/study-ocr/src/study-rabbitmq (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" filepath="$PROJECT_DIR$/study-rocketmq/study-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-seata/study-seata.iml" filepath="$PROJECT_DIR$/study-seata/study-seata.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-sentinel/study-sentinel.iml" filepath="$PROJECT_DIR$/study-sentinel/study-sentinel.iml" />

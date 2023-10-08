@@ -19,6 +19,7 @@
         <module name="nacos-config" />
         <module name="zzh-cloud-order" />
         <module name="seata-bese" />
+        <module name="study-ocr1" />
         <module name="dubbo-nacos-api" />
         <module name="kafka-base" />
         <module name="nacos-provider" />
@@ -85,7 +86,9 @@
       <module name="study-mongodb" target="1.8" />
       <module name="study-nacos" target="1.8" />
       <module name="study-oauth2" target="1.8" />
+      <module name="study-ocr1" target="8" />
       <module name="study-rabbitmq" target="1.8" />
+      <module name="study-rabbitmq (1)" target="1.8" />
       <module name="study-rocketmq" target="1.8" />
       <module name="study-seata" target="1.8" />
       <module name="study-sentinel" target="1.8" />
@@ -139,6 +142,7 @@
       <module name="study-mongodb" options="-parameters" />
       <module name="study-nacos" options="-parameters" />
       <module name="study-oauth2" options="-parameters" />
+      <module name="study-ocr1" options="-parameters" />
       <module name="study-rabbitmq" options="-parameters" />
       <module name="study-seata" options="-parameters" />
       <module name="study-sentinel" options="-parameters" />
