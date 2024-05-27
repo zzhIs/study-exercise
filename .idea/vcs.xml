@@ -2,25 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/docs/manual" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/lib/pkp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/lib/pkp/lib/counterBots" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/lib/ui-library" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/blocks/browse" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/blocks/makeSubmission" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/acron" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/citationStyleLanguage" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/crossref" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/customBlockManager" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/googleAnalytics" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/googleScholar" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/lensGalley" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/orcidProfile" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/pdfJsViewer" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/staticPages" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/generic/tinymce" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/reports/counter/classes/COUNTER" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/study-rocketmq/ojs/plugins/reports/reviewReport" vcs="Git" />
   </component>
 </project>

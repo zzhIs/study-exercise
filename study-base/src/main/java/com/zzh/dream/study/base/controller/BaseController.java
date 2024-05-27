@@ -3,8 +3,11 @@ package com.zzh.dream.study.base.controller;
 import com.zzh.dream.study.base.biz.UserInsertBiz;
 import com.zzh.dream.study.base.entity.User;
 import com.zzh.dream.study.base.service.UserService;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDateTime;
 
 /**
  * @description: 基础控制器
@@ -39,5 +42,20 @@ public class BaseController {
     public String insert(){
         userInsertBiz.insert();
         return "success";
+    }
+
+    @PostMapping("/date_time")
+    public String dateTime(@RequestBody DateTimeDTO dateTimeDTO){
+        System.out.println(dateTimeDTO.getName());
+        System.out.println(dateTimeDTO.getLocalDateTime());
+
+
+        return "success";
+    }
+
+    @Data
+    static class DateTimeDTO{
+        private String name;
+        private LocalDateTime localDateTime;
     }
 }
